@@ -1,0 +1,344 @@
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>今夜緣起</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+      <!-- cs LINK -->
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/swiper.min.css">
+      <style>
+            .Farmlnfo_about_photo {
+                  width: 100%;
+                  height: 700px;
+                  background-color: aquamarine;
+            }
+
+            .Farmlnfo_about_content {
+                  position: relative;
+                  width: 100%;
+                  height: 700px;
+            }
+
+            .Farmlnfo_about_block1 {
+                  position: absolute;
+                  top: 5%;
+                  width: 50%;
+            }
+
+            .Farmlnfo_about_block1_top {
+                  width: 100%;
+                  text-align: center;
+            }
+
+            .Farmlnfo_about_block1_top h1 {
+                  letter-spacing: 25px;
+            }
+
+            .Farmlnfo_about_block1_down {
+                  width: 200px;
+                  height: 50px;
+                  background-color: brown;
+                  float: right;
+            }
+
+
+            .Farmlnfo_about_block2 {
+                  position: absolute;
+                  right: 0%;
+                  top: 20%;
+                  width: 40%;
+                  height: 40%;
+                  background-color: aquamarine;
+            }
+
+            .Farmlnfo_about_block3 {
+                  position: absolute;
+                  writing-mode: vertical-lr;
+                  bottom: 40%;
+            }
+
+            .Farmlnfo_about_block4 {
+                  position: absolute;
+                  bottom: 0%;
+                  width: 100%;
+                  height: 200px;
+                  background-color: aquamarine;
+            }
+
+            /* 農場資訊 */
+
+            #Farmlnfo_about_introduce {
+                  width: 100%;
+                  height: 100px;
+                  margin: 0 auto;
+
+            }
+
+            .Farmlnfo_about_introduce_text {
+                  width: 50%;
+                  height: 50px;
+                  background-color: aquamarine;
+                  float: left;
+            }
+
+            .Farmlnfo_about_introduce_Pagination {
+                  width: 50%;
+                  height: 50px;
+                  background-color: crimson;
+                  float: left;
+            }
+
+            .Farmlnfo_about_introduce_content {
+                  width: 100%;
+                  height: 280px;
+                  background-color: blueviolet;
+                  position: relative;
+            }
+
+            .Farmlnfo_about_introduce_content_title {
+                  width: 30%;
+                  height: 50px;
+                  background-color: black;
+                  position: absolute;
+                  left: 0;
+            }
+
+            .Farmlnfo_about_introduce_content_block {
+                  height: 150px;
+                  background-color: crimson;
+                  width: 90%;
+                  position: absolute;
+                  right: 0;
+                  top: 90px;
+            }
+
+            /* 農場簡介下面的圖片 */
+
+            .Farmlnfo_about_introduce_photo {
+                  width: 100%;
+                  height: 400px;
+                  background-color: blue;
+                  margin: 80px 0px 80px;
+            }
+
+            /* 交通資訊 */
+
+            #Farmlnfo_knows {
+                  width: 100%;
+                  margin: 0 auto 80px;
+
+            }
+
+            .Farmlnfo_knows_text {
+                  width: 50%;
+                  height: 50px;
+                  background-color: aquamarine;
+                  float: left;
+            }
+
+            .Farmlnfo_knows_Pagination {
+                  width: 50%;
+                  height: 50px;
+                  background-color: crimson;
+                  float: left;
+            }
+
+            .Farmlnfo_knows_Ruler {
+                  width: 100%;
+                  height: 600px;
+                  background-color: rgb(10, 13, 138);
+            }
+
+            .Farmlnfo_knows_photo {
+                  width: 100%;
+                  height: 600px;
+                  background-color: black;
+                  float: right;
+            }
+
+            /* 農場簡介下面的圖片 */
+
+            .Farmlnfo_about_introduce_photo {
+                  width: 100%;
+                  height: 400px;
+                  background-color: blue;
+                  margin: 80px 0px 80px;
+            }
+
+            #Farmlnfo_traffic {
+                  width: 100%;
+                  margin: 0 auto 80px;
+
+            }
+
+            .Farmlnfo_traffic_text {
+                  width: 50%;
+                  height: 50px;
+                  background-color: aquamarine;
+                  float: left;
+            }
+
+            .Farmlnfo_traffic_Pagination {
+                  width: 50%;
+                  height: 50px;
+                  background-color: crimson;
+                  float: left;
+            }
+
+            .Farmlnfo_traffic_Ruler {
+                  width: 100%;
+                  height: 600px;
+                  background-color: rgb(10, 13, 138);
+            }
+
+            .Farmlnfo_traffic_photo {
+                  width: 100%;
+                  height: 600px;
+                  background-color: black;
+                  float: right;
+            }
+            #footer{
+                  height: 50px;
+                  background-color: #000;
+            }
+      </style>
+</head>
+
+<body>
+      <div id="Farmlnfo">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home
+                                          <span class="sr-only">(current)</span>
+                                    </a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Disabled</a>
+                              </li>
+                        </ul>
+                  </div>
+            </nav>
+            <div id="section1">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-12 col-md-6">
+                                    <div class="Farmlnfo_about_photo"></div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                    <div class="Farmlnfo_about_content">
+                                          <div class="Farmlnfo_about_block1">
+                                                <div class="Farmlnfo_about_block1_top">
+                                                      <h1>今夜起源</h1>
+                                                      <h1>今夜起源</h1>
+                                                </div>
+                                                <div class="Farmlnfo_about_block1_down">
+
+                                                </div>
+                                          </div>
+                                          <div class="Farmlnfo_about_block2"></div>
+                                          <div class="Farmlnfo_about_block3">
+                                                <h1>今夜起源</h1>
+                                          </div>
+                                          <div class="Farmlnfo_about_block4"></div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div id="section2">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-12 col-md-4">
+                                    <div id="Farmlnfo_about_introduce">
+                                          <div class="Farmlnfo_about_introduce_text"></div>
+                                          <div class="Farmlnfo_about_introduce_Pagination"></div>
+                                    </div>
+                              </div>
+                              <div class="col-12 col-md-8">
+                                    <div class="Farmlnfo_about_introduce_content">
+                                          <div class="Farmlnfo_about_introduce_content_title"></div>
+                                          <div class="Farmlnfo_about_introduce_content_block"></div>
+                                    </div>
+                                    <div class="Farmlnfo_about_introduce_content">
+                                          <div class="Farmlnfo_about_introduce_content_title"></div>
+                                          <div class="Farmlnfo_about_introduce_content_block"></div>
+                                    </div>
+                                    <div class="Farmlnfo_about_introduce_content">
+                                          <div class="Farmlnfo_about_introduce_content_title"></div>
+                                          <div class="Farmlnfo_about_introduce_content_block"></div>
+                                    </div>
+                                    <div class="Farmlnfo_about_introduce_content">
+                                          <div class="Farmlnfo_about_introduce_content_title"></div>
+                                          <div class="Farmlnfo_about_introduce_content_block"></div>
+                                    </div>
+                                    <div class="Farmlnfo_about_introduce_content">
+                                          <div class="Farmlnfo_about_introduce_content_title"></div>
+                                          <div class="Farmlnfo_about_introduce_content_block"></div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="Farmlnfo_about_introduce_photo"></div>
+
+            </div>
+            <div id="section3">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-12 col-md-4">
+                                    <div id="Farmlnfo_knows">
+                                          <div class="Farmlnfo_knows_text"></div>
+                                          <div class="Farmlnfo_knows_Pagination"></div>
+                                          <div class="Farmlnfo_knows_Ruler"></div>
+                                    </div>
+
+                              </div>
+                              <div class="col-12 col-md-8">
+                                    <div class="Farmlnfo_knows_photo"></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div id="section4">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-12 col-md-4">
+                                    <div id="Farmlnfo_traffic">
+                                          <div class="Farmlnfo_traffic_text"></div>
+                                          <div class="Farmlnfo_traffic_Pagination"></div>
+                                          <div class="Farmlnfo_traffic_Ruler"></div>
+                                    </div>
+
+                              </div>
+                              <div class="col-12 col-md-8">
+                                    <div class="Farmlnfo_traffic_photo"></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div id="footer"></div>
+      </div>
+      <!-- JS　script -->
+      <script src=" JS/jquery-3.3.1.slim.min.js "></script>
+      <script src="JS/popper.min.js "></script>
+      <script src="JS/bootstrap.min.js "></script>
+      <script src="JS/swiper.min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>首頁動畫</title>
+
+      <!-- cs LINK -->
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/swiper.min.css">
+
+      <style>
+            html,
+            body {
+                  position: relative;
+                  height: 100%;
+            }
+
+            body {
+                  background: #eee;
+                  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #000;
+                  margin: 0;
+                  padding: 0;
+            }
+
+            /* 動畫影片 */
+
+            #IntroAnimate_Shortfilm {
+                  max-width: 80%;
+                  height: 600px;
+                  margin: 0 auto;
+            }
+
+            /* 四張為一單位輪播 */
+
+            #IntroAnimate_photo {
+                  position: relative;
+                  top: -150px;
+                  padding: 50px;
+                  height: 234px;
+
+            }
+
+            .swiper-container {
+                  width: 100%;
+
+            }
+            .swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  max-width: 234px;
+                  /* Center slide text vertically */
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  -webkit-align-items: center;
+                  align-items: center;
+            }
+      </style>
+</head>
+
+<body>
+      <!-- Navbar -->
+      <div id="IntroAnimate_navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                              <a class="nav-item nav-link active" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                              </a>
+                              <a class="nav-item nav-link" href="#">Features</a>
+                              <a class="nav-item nav-link" href="#">Pricing</a>
+                              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                        </div>
+                  </div>
+            </nav>
+      </div>
+      <div id="IntroAnimate_Shortfilm">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JSLje00xS6c" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe>
+            <div id="IntroAnimate_photo">
+                  <!-- Swiper -->
+                  <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                        </div>
+                  </div>
+                   <!-- Add Arrows -->
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+            </div>
+      </div>
+
+      <!-- JS　script -->
+      <script src="JS/jquery-3.3.1.slim.min.js"></script>
+      <script src="JS/popper.min.js"></script>
+      <script src="JS/bootstrap.min.js"></script>
+      <script src="JS/swiper.min.js"></script>
+
+      <script>
+            var swiper = new Swiper('.swiper-container', {
+                  slidesPerView: 4,
+                  spaceBetween: 60,
+                  slidesPerGroup: 4,
+                  loop: true,
+                  loopFillGroupWithBlank: true,
+                  pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                  },
+                  autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                  },
+                  navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                  },
+            });
+      </script>
+</body>
+
+</html>

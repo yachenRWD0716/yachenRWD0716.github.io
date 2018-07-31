@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>今夜星辰</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+      <!-- cs LINK -->
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/swiper.min.css">
+
+      <style>
+            html,
+            body {
+                  position: relative;
+                  height: 100%;
+            }
+
+            body {
+                  background: #eee;
+                  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #000;
+                  margin: 0;
+                  padding: 0;
+            }
+
+
+            /* 共通 */
+
+            h1 {
+                  width: 100%;
+                  padding: 50px;
+                  text-align: center;
+            }
+
+            /* index_Carousel-map */
+
+            #index_Carousel-map {
+                  padding: 20px;
+            }
+
+            .swiper-container {
+                  width: 90%;
+                  height: 50%;
+            }
+
+            .swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  /* Center slide text vertically */
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: -webkit-flex;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  -webkit-justify-content: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  -webkit-align-items: center;
+                  align-items: center;
+            }
+
+            /* index_news_card */
+
+            #index_news {
+                  width: 90%;
+                  margin: 0 auto;
+                  padding: 25px;
+            }
+
+            .card {
+                  height: 300px;
+            }
+
+            #index_news .card {
+                  margin-bottom: 50px;
+            }
+
+            /* footer */
+
+            #footer {
+                  height: 50px;
+                  background-color: #000;
+            }
+      </style>
+</head>
+
+<body>
+      <!-- Navbar -->
+      <div id="index_navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                              <a class="nav-item nav-link active" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                              </a>
+                              <a class="nav-item nav-link" href="#">Features</a>
+                              <a class="nav-item nav-link" href="#">Pricing</a>
+                              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                        </div>
+                  </div>
+            </nav>
+      </div>
+      <!-- 輪播圖 -->
+      <div id="index_Carousel-map">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+            </div>
+      </div>
+      <!-- H1 最新消息 H1 -->
+      <h1>最新消息</h1>
+      <!-- 最新消息卡片 -->
+      <div id="index_news">
+            <div class="card-deck">
+                  <div class="row w-100">
+                        <div class="col-4">
+                              <div class="card">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                              </div>
+                        </div>
+                        <div class="col-4">
+                              <div class="card">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                              </div>
+                        </div>
+                        <div class="col-4">
+                              <div class="card">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+
+                              </div>
+                        </div>
+                        <div class="col-4">
+                              <div class="card">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+
+                              </div>
+                        </div>
+                        <div class="col-4">
+                              <div class="card">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+
+                              </div>
+                        </div>
+                        <div class="col-4">
+                              <div class="card">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+
+      <div id="footer">
+
+      </div>
+
+      <!-- JS　script -->
+      <script src="JS/jquery-3.3.1.slim.min.js"></script>
+      <script src="JS/popper.min.js"></script>
+      <script src="JS/bootstrap.min.js"></script>
+      <script src="JS/swiper.min.js"></script>
+      <!-- index_Carousel-map -->
+      <script>
+            var swiper = new Swiper('.swiper-container', {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                  loop: true,
+                  mousewheel: true,
+                  autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                  },
+                  navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                  },
+
+            });
+      </script>
+</body>
+
+</html>
