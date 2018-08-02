@@ -24,14 +24,77 @@
 
             .FarmView_content_map {
                   width: 100%;
-                  height: 500px;
+                  height: 400px;
                   background-color: rgb(52, 165, 108);
+
             }
 
             .FarmView_content_block {
-                  width: 100%;
+                  width: 25%;
+                  float: left;
+                  overflow: hidden;
+                  height: 400px;
             }
+
+            .FarmView_content_block:hover #cover {
+                  top: 0;
+                  left: 0;
+                  transform-origin: 0 0;
+
+            }
+
+            .card {
+                  position: relative;
+                  
+                  display: -ms-flexbox;
+                  display: flex;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  min-width: 0;
+                  word-wrap: break-word;
+                  background-color: #fff;
+                  background-clip: border-box;
+                  border: 0px solid rgba(0, 0, 0, .125);
+                  border-radius: 0;
+            }
+
+            .BG {
+                  max-width: 100%;
+                  height: 100%;
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-image: url('Img/FarmView/test1.jpg')
+            }
+
+            .card_title {
+                  color: white;
+                  text-align: center;
+                  margin-bottom: 50px;
+            }
+
+            .card_text {
+                  color: white;
+                  text-align: center;
+                  font-size: 20px;
+                  padding: 0 20px;
+            }
+
+
+            #cover {
+                  position: absolute;
+                  top: 325;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  padding: 15px 0;
+                  background-color: rgba(0, 0, 0, 0.8);
+                  transition-duration: 1s;
+                  transition-timing-function: ease-in-out;
+            }
+
             /* 地圖 */
+
             #footer {
                   height: 50px;
                   background-color: #000;
@@ -67,69 +130,62 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 108px">
                               <div class="col-12">
                                     <div class="FarmView_content_map"></div>
                               </div>
                         </div>
-                        <div class="row">
-                              <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="FarmView_content_block">
-                                          <div class="FarmView_content_card">
-                                                <div class="card">
-                                                      <img class="card-img-top" src="..." alt="Card image cap">
-                                                      <div class="card-body">
-                                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                                  the bulk of the card's content.</p>
-                                                      </div>
-                                                </div>
+
+                        <!-- 同樂星辰 -->
+                        <div class="row" style="margin-bottom: 250px; padding: 0 15px">
+                              <div class="FarmView_content_block">
+                                    <div class="card">
+                                          <div id="cover">
+                                                <h2 class="card_title">我是標題</h1>
+                                                      <div class="card_text">我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文</div>
                                           </div>
-                                    </div>
-                              </div>
-                              <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="FarmView_content_block">
-                                          <div class="FarmView_content_card">
-                                                <div class="card">
-                                                      <img class="card-img-top" src="..." alt="Card image cap">
-                                                      <div class="card-body">
-                                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                                  the bulk of the card's content.</p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="FarmView_content_block">
-                                          <div class="FarmView_content_card">
-                                                <div class="card">
-                                                      <img class="card-img-top" src="..." alt="Card image cap">
-                                                      <div class="card-body">
-                                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                                  the bulk of the card's content.</p>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="col-12 col-md-6 col-xl-3">
-                                    <div class="FarmView_content_block">
-                                          <div class="FarmView_content_card">
-                                                <div class="card">
-                                                      <img class="card-img-top" src="..." alt="Card image cap">
-                                                      <div class="card-body">
-                                                            <p class="card-text">Some quick example text to build on the card title and make up
-                                                                  the bulk of the card's content.</p>
-                                                      </div>
-                                                </div>
-                                          </div>
+                                          <div class="BG"></div>
                                     </div>
                               </div>
 
+
+                              <!-- 動物星辰 -->
+                              <div class="FarmView_content_block">
+                                    <div class="card">
+                                          <div id="cover">
+                                                <h2 class="card_title">我是標題</h1>
+                                                      <div class="card_text">我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文</div>
+                                          </div>
+                                          <div class="BG"></div>
+                                    </div>
+                              </div>
+
+                              <!-- 今夜拍拍 -->
+                              <div class="FarmView_content_block">
+                                    <div class="card">
+                                          <div id="cover">
+                                                <h2 class="card_title">我是標題</h1>
+                                                      <div class="card_text">我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文</div>
+                                          </div>
+                                          <div class="BG"></div>
+                                    </div>
+                              </div>
+
+                              <!-- 今夜美食 -->
+                              <div class="FarmView_content_block">
+                                    <div class="card">
+                                          <div id="cover">
+                                                <h2 class="card_title">我是標題</h1>
+                                                      <div class="card_text">我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文我是內文</div>
+                                          </div>
+                                          <div class="BG"></div>
+                                    </div>
+                              </div>
                         </div>
                   </div>
             </div>
-            <div id="footer"></div>
+      </div>
+      <div id="footer"></div>
       </div>
       <!-- JS　script -->
       <script src=" JS/jquery-3.3.1.slim.min.js "></script>
