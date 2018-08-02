@@ -5,20 +5,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>園區景點</title>
-      <!-- cs LINK -->
+      <!-- css LINK -->
       <link rel="stylesheet" href="CSS/bootstrap.min.css">
       <link rel="stylesheet" href="CSS/swiper.min.css">
       <style>
             /* 標題 */
 
+            /*navbar start*/
+
+            .bg-light {
+                  background-color: #0AAF4B !important;
+            }
+            .align{
+               padding-left: 20%;
+            }
+            .navlogo{
+                  background-image: url('Img/nav/logo.png');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  width: 290px;
+                  height: 10%;
+                  margin-right: 200px;
+            }
+
+            /*navbar end*/
+
             .FarmView_content_title {
                   width: 100%;
                   height: 100px;
-                  
+
             }
-            FarmView_content{
-                  width: 80%;
-            }
+
 
             .FarmView_content_title h1 {
                   text-align: center;
@@ -32,8 +50,8 @@
                   background-position: center;
                   background-size: contain;
                   background-repeat: no-repeat;
-                  background-color: #B3CC3C; 
-                  
+                  background-color: #B3CC3C;
+
 
             }
 
@@ -53,7 +71,7 @@
 
             .card {
                   position: relative;
-                  
+
                   display: -ms-flexbox;
                   display: flex;
                   -ms-flex-direction: column;
@@ -104,16 +122,21 @@
             /* 地圖 */
 
             #footer {
-                  height: 50px;
-                  background-color: #000;
+                  width: 100%;
+                  height: 240px;
+                  background-position: center;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-image: url('Img/footer/footer.png');
             }
       </style>
 </head>
 
 <body>
       <div id="FarmView_index">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#">Navbar</a>
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light align">
+                  <div class="navlogo"></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -129,6 +152,9 @@
                         </div>
                   </div>
             </nav>
+            <!-- navbar end -->
+
+
             <div class="FarmView_content">
                   <div class="container">
                         <div class="row">
@@ -145,7 +171,7 @@
                         </div>
 
                         <!-- 同樂星辰 -->
-                        <div class="row" style="margin-bottom: 250px; padding: 0 15px">
+                        <div class="row" style="margin-bottom: 150px; padding: 0 15px">
                               <div class="FarmView_content_block">
                                     <div class="card">
                                           <div id="cover">
@@ -193,8 +219,13 @@
                   </div>
             </div>
       </div>
-      <div id="footer"></div>
+
+      <!-- footer start -->
+      <div id="footer">
       </div>
+      <!-- footer end -->
+      </div>
+
       <!-- JS　script -->
       <script src=" JS/jquery-3.3.1.slim.min.js "></script>
       <script src="JS/popper.min.js "></script>
