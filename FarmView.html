@@ -16,17 +16,88 @@
             .bg-light {
                   background-color: #0AAF4B !important;
             }
-            .align{
-               padding-left: 20%;
+
+            .align {
+                  padding-left: 16%;
             }
-            .navlogo{
-                  background-image: url('Img/nav/logo.png');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  width: 290px;
-                  height: 10%;
-                  margin-right: 200px;
+
+            .menuicon {
+
+                  padding-left: 21%;
+
+            }
+
+            .menutext {
+                  width: 150px;
+                  padding-left: 5px;
+            }
+
+            .menu {
+                  width: 100px;
+                  height: 60px;
+
+            }
+
+
+            #indexiconHover :nth-child(2) {
+                  display: none;
+            }
+
+            #index:hover #indexiconHover :nth-child(2) {
+                  display: block;
+            }
+
+            #index:hover #indexiconHover :nth-child(1) {
+                  display: none;
+            }
+
+            #index:hover #text1>a {
+                  color: #897049 !important;
+            }
+
+            #originiconHover :nth-child(2) {
+                  display: none;
+            }
+
+            #origin:hover #originiconHover :nth-child(2) {
+                  display: block;
+            }
+
+            #origin:hover #originiconHover :nth-child(1) {
+                  display: none;
+            }
+            #origin:hover #text2 > a{
+                 color: #897049 !important ;
+            }
+
+            #viewiconHover :nth-child(2) {
+                  display: none;
+            }
+
+            #view:hover #viewiconHover :nth-child(2) {
+                  display: block;
+            }
+
+            #view:hover #viewiconHover :nth-child(1) {
+                  display: none;
+            }
+            #view:hover #text3 > a{
+                 color: #897049 !important ;
+            }
+
+            #contacticonHover :nth-child(2) {
+                  display: none;
+            }
+
+            #contact:hover #contacticonHover :nth-child(2) {
+                  display: block;
+            }
+
+            #contact:hover #contacticonHover :nth-child(1) {
+                  display: none;
+            }
+            #contact:hover #text4 > a{
+                 color: #897049 !important ;
             }
 
             /*navbar end*/
@@ -135,23 +206,59 @@
 <body>
       <div id="FarmView_index">
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light align">
-                  <div class="navlogo"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light align" style="height: 80px;">
+                  <div class="navlogo" style="margin-right: 190px; font-weight: 900;">
+                        <img src="Img/nav/logo.png" alt="" style="height: 60px;">
+                  </div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                              <a class="nav-item nav-link active" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                              </a>
-                              <a class="nav-item nav-link" href="#">Features</a>
-                              <a class="nav-item nav-link" href="#">Pricing</a>
-                              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                        <div class="navbar-nav" style="padding-top: 10px;">
+                              <div class="menu" id="index">
+                                    <div class="menuicon" id="indexiconHover">
+                                          <img src="Img/nav/index.png" alt="" style="height: 29px;">
+                                          <img src="Img/nav/hover/indexhover.png" alt="" style="height: 29px;">
+                                    </div>
+                                    <div class="menutext" id="text1">
+                                          <a class="nav-item nav-link active" href="#" style="color: white; padding: 0 14px;">首頁</a>
+                                    </div>
+                              </div>
+                              <div class="menu" id="origin">
+                                    <div class="menuicon" id="originiconHover">
+                                          <img src="Img/nav/origin.png" alt="" style="height: 29px;">
+                                          <img src="Img/nav/hover/originhover.png" alt="" style="height: 29px;">
+
+                                    </div>
+                                    <div class="menutext" id="text2">
+                                          <a class="nav-item nav-link" href="#" style="color: white;padding: 0">今夜緣起</a>
+                                    </div>
+                              </div>
+                              <div class="menu" id="view">
+                                    <div class="menuicon" id="viewiconHover">
+                                          <img src="Img/nav/view.png" alt="" style="height: 29px;">
+                                          <img src="Img/nav/hover/viewhover.png" alt="" style="height: 29px;">
+
+                                    </div>
+                                    <div class="menutext" id="text3">
+                                          <a class="nav-item nav-link" href="#" style="color: white;padding: 0">園區景點</a>
+                                    </div>
+                              </div>
+                              <div class="menu" id="contact">
+                                    <div class="menuicon" id="contacticonHover">
+                                          <img src="Img/nav/contact.png" alt="" style="height: 29px;">
+                                          <img src="Img/nav/hover/contacthover.png" alt="" style="height: 29px;">
+
+                                    </div>
+                                    <div class="menutext" id="text4">
+                                          <a class="nav-item nav-link disabled" href="#" style="color: white; padding: 0">聯絡我們</a>
+                                    </div>
+                              </div>
                         </div>
                   </div>
             </nav>
+
             <!-- navbar end -->
 
 
@@ -222,6 +329,7 @@
 
       <!-- footer start -->
       <div id="footer">
+
       </div>
       <!-- footer end -->
       </div>
