@@ -24,20 +24,20 @@
 
             .menuicon {
 
-                  padding:0 35%;
+                  padding: 0 35%;
 
             }
 
             .menutext {
 
-                  padding:0 18%;
+                  padding: 0 18%;
             }
 
             .menu {
                   position: relative;
                   width: 100px;
                   height: 60px;
-                  
+
                   margin-right: 15px;
             }
 
@@ -109,7 +109,7 @@
             .dropdown {
                   position: absolute;
                   width: 100%;
-                  background-color:#0AAF4B;
+                  background-color: #0AAF4B;
                   text-align: center;
                   display: none;
             }
@@ -153,7 +153,7 @@
             }
 
             .FarmView_content_block {
-                  width: 25%;
+                  width: 100%;
                   float: left;
                   overflow: hidden;
                   height: 400px;
@@ -188,16 +188,20 @@
                   background-position: center;
                   background-repeat: no-repeat;
             }
-            .pic1{
+
+            .pic1 {
                   background-image: url('Img/FarmView/view-02.jpg')
             }
-            .pic2{
+
+            .pic2 {
                   background-image: url('Img/FarmView/view-03.jpg')
             }
-            .pic3{
+
+            .pic3 {
                   background-image: url('Img/FarmView/view-04.jpg')
             }
-            .pic4{
+
+            .pic4 {
                   background-image: url('Img/FarmView/view-05.jpg')
             }
 
@@ -229,7 +233,14 @@
 
             /* 地圖 */
 
-           
+            @media screen and (max-width: 1200px) {
+                  #cover {
+                 top: 200;
+            }
+            #mrb{
+                  margin-bottom: 50px;
+            }
+            }
       </style>
 </head>
 
@@ -273,16 +284,16 @@
                                     </div>
 
                                     <ul class="dropdown">
-                                                <li>
-                                                      <a href="">知知不不道</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">不知知之道</a>
-                                                </li>
-                                                <li>
-                                                      <a href="">道道知道</a>
-                                                </li>
-                                          </ul>
+                                          <li>
+                                                <a href="">知知不不道</a>
+                                          </li>
+                                          <li>
+                                                <a href="">不知知之道</a>
+                                          </li>
+                                          <li>
+                                                <a href="">道道知道</a>
+                                          </li>
+                                    </ul>
                               </div>
 
 
@@ -334,48 +345,57 @@
                         </div>
 
                         <!-- 同樂星辰 -->
-                        <div class="row" style="margin-bottom: 150px; padding: 0 15px">
-                              <div class="FarmView_content_block">
-                                    <div class="card">
-                                          <div id="cover">
-                                                <h2 class="card_title">同樂星辰</h1>
-                                                      <div class="card_text">有許多景點設施提供給您們拍照，歡迎大小朋友還有情侶們來我們園區探索喔！</div>
+                        <div class="row" style="margin-bottom: 150px; padding: 0 15px" >
+
+                              <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
+                                    <div class="FarmView_content_block">
+                                          <div class="card">
+                                                <div id="cover">
+                                                      <h2 class="card_title">同樂星辰</h1>
+                                                            <div class="card_text">有許多景點設施提供給您們拍照，歡迎大小朋友還有情侶們來我們園區探索喔！</div>
+                                                </div>
+                                                <div class="BG pic1"></div>
                                           </div>
-                                          <div class="BG pic1"></div>
                                     </div>
                               </div>
 
 
                               <!-- 動物星辰 -->
-                              <div class="FarmView_content_block">
-                                    <div class="card">
-                                          <div id="cover">
-                                                <h2 class="card_title">動物星辰</h1>
-                                                      <div class="card_text">園區裡有許多各式各樣的小動物來等你與牠們一塊玩耍喔！</div>
+                              <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
+                                    <div class="FarmView_content_block">
+                                          <div class="card">
+                                                <div id="cover">
+                                                      <h2 class="card_title">動物星辰</h1>
+                                                            <div class="card_text">園區裡有許多各式各樣的小動物來等你與牠們一塊玩耍喔！</div>
+                                                </div>
+                                                <div class="BG pic2"></div>
                                           </div>
-                                          <div class="BG pic2"></div>
                                     </div>
                               </div>
 
                               <!-- 今夜拍拍 -->
-                              <div class="FarmView_content_block">
-                                    <div class="card">
-                                          <div id="cover">
-                                                <h2 class="card_title">今夜拍拍</h1>
-                                                      <div class="card_text">網美網帥都來踩點了，你還不趕快來！？</div>
+                              <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
+                                    <div class="FarmView_content_block">
+                                          <div class="card">
+                                                <div id="cover">
+                                                      <h2 class="card_title">今夜拍拍</h1>
+                                                            <div class="card_text">網美網帥都來踩點了，你還不趕快來！？</div>
+                                                </div>
+                                                <div class="BG pic3"></div>
                                           </div>
-                                          <div class="BG pic3"></div>
                                     </div>
                               </div>
 
                               <!-- 今夜美食 -->
-                              <div class="FarmView_content_block">
-                                    <div class="card">
-                                          <div id="cover">
-                                                <h2 class="card_title">今夜美食</h1>
-                                                      <div class="card_text">我們有美味可口的佳餚，可以滿足您的味蕾。</div>
+                              <div class="col-12 col-md-6 col-xl-3" style="padding: 0;">
+                                    <div class="FarmView_content_block">
+                                          <div class="card">
+                                                <div id="cover">
+                                                      <h2 class="card_title">今夜美食</h1>
+                                                            <div class="card_text">我們有美味可口的佳餚，可以滿足您的味蕾。</div>
+                                                </div>
+                                                <div class="BG pic4"></div>
                                           </div>
-                                          <div class="BG pic4"></div>
                                     </div>
                               </div>
                         </div>
