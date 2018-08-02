@@ -23,18 +23,20 @@
 
             .menuicon {
 
-                  padding-left: 21%;
+                  padding:0 35%;
 
             }
 
             .menutext {
-                  width: 150px;
-                  padding-left: 5px;
+
+                  padding:0 18%;
             }
 
             .menu {
+                  position: relative;
                   width: 100px;
                   height: 60px;
+                  
                   margin-right: 15px;
             }
 
@@ -66,8 +68,9 @@
             #origin:hover #originiconHover :nth-child(1) {
                   display: none;
             }
-            #origin:hover #text2 > a{
-                 color: #897049 !important ;
+
+            #origin:hover #text2>a {
+                  color: #897049 !important;
             }
 
             #viewiconHover :nth-child(2) {
@@ -81,8 +84,9 @@
             #view:hover #viewiconHover :nth-child(1) {
                   display: none;
             }
-            #view:hover #text3 > a{
-                 color: #897049 !important ;
+
+            #view:hover #text3>a {
+                  color: #897049 !important;
             }
 
             #contacticonHover :nth-child(2) {
@@ -96,8 +100,29 @@
             #contact:hover #contacticonHover :nth-child(1) {
                   display: none;
             }
-            #contact:hover #text4 > a{
-                 color: #897049 !important ;
+
+            #contact:hover #text4>a {
+                  color: #897049 !important;
+            }
+
+            .dropdown {
+                  position: absolute;
+                  width: 100%;
+                  background-color:#0AAF4B;
+                  text-align: center;
+                  display: none;
+            }
+
+            .dropdown>li>a {
+                  display: inline-block;
+                  text-decoration: none;
+                  color: white;
+                  font-size: 20px;
+                  padding: 6px 0;
+            }
+
+            #origin:hover>.dropdown {
+                  display: block;
             }
 
             /*navbar end*/
@@ -216,45 +241,71 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav" style="padding-top: 10px;">
+
+
+
                               <div class="menu" id="index">
                                     <div class="menuicon" id="indexiconHover">
                                           <img src="Img/nav/index.png" alt="" style="height: 29px;">
                                           <img src="Img/nav/hover/indexhover.png" alt="" style="height: 29px;">
                                     </div>
                                     <div class="menutext" id="text1">
-                                          <a class="nav-item nav-link active" href="#" style="color: white; padding: 0 14px;">首&nbsp;頁</a>
+                                          <a class="nav-item nav-link active" href="#" style="color: white; padding: 0 13px;">首&nbsp;頁</a>
                                     </div>
+
+
                               </div>
+
+
+
                               <div class="menu" id="origin">
                                     <div class="menuicon" id="originiconHover">
                                           <img src="Img/nav/origin.png" alt="" style="height: 29px;">
                                           <img src="Img/nav/hover/originhover.png" alt="" style="height: 29px;">
-
                                     </div>
                                     <div class="menutext" id="text2">
                                           <a class="nav-item nav-link" href="#" style="color: white;padding: 0">今夜緣起</a>
                                     </div>
+
+                                    <ul class="dropdown">
+                                                <li>
+                                                      <a href="">知知不不道</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">不知知之道</a>
+                                                </li>
+                                                <li>
+                                                      <a href="">道道知道</a>
+                                                </li>
+                                          </ul>
                               </div>
+
+
+
                               <div class="menu" id="view">
                                     <div class="menuicon" id="viewiconHover">
                                           <img src="Img/nav/view.png" alt="" style="height: 29px;">
                                           <img src="Img/nav/hover/viewhover.png" alt="" style="height: 29px;">
-
                                     </div>
                                     <div class="menutext" id="text3">
                                           <a class="nav-item nav-link" href="#" style="color: white;padding: 0">園區景點</a>
                                     </div>
                               </div>
+
+
+
                               <div class="menu" id="contact">
                                     <div class="menuicon" id="contacticonHover">
                                           <img src="Img/nav/contact.png" alt="" style="height: 29px;">
                                           <img src="Img/nav/hover/contacthover.png" alt="" style="height: 29px;">
-
                                     </div>
                                     <div class="menutext" id="text4">
                                           <a class="nav-item nav-link disabled" href="#" style="color: white; padding: 0">聯絡我們</a>
                                     </div>
                               </div>
+
+
+
                         </div>
                   </div>
             </nav>
