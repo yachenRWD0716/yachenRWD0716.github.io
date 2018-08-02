@@ -9,6 +9,7 @@
       <!-- cs LINK -->
       <link rel="stylesheet" href="CSS/bootstrap.min.css">
       <link rel="stylesheet" href="CSS/swiper.min.css">
+      <link rel="stylesheet" href="CSS/public.css">
 
       <style>
             html,
@@ -19,10 +20,8 @@
 
             body {
                   background: #eee;
-                  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
                   font-size: 14px;
                   color: #000;
-                  margin: 0;
                   padding: 0;
             }
 
@@ -48,12 +47,12 @@
                   width: 100%;
 
             }
+
             .swiper-slide {
                   text-align: center;
                   font-size: 18px;
                   background: #fff;
                   max-width: 234px;
-                  /* Center slide text vertically */
                   display: -webkit-box;
                   display: -ms-flexbox;
                   display: -webkit-flex;
@@ -66,6 +65,11 @@
                   -ms-flex-align: center;
                   -webkit-align-items: center;
                   align-items: center;
+            }
+
+
+            #footer {
+                  padding-top: 30%;
             }
       </style>
 </head>
@@ -94,32 +98,48 @@
       <div id="IntroAnimate_Shortfilm">
             <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JSLje00xS6c" frameborder="0" allow="autoplay; encrypted-media"
                   allowfullscreen></iframe> -->
-                  <video src="video/IntroAnimate.mp4"width="100%" height="100%" autoplay="autoplay" loop="loop">
-
-                              </video>
+            <video width="100%" height="100%" autoplay loop>
+                  <source src="video/IntroAnimate.mp4" type="video/mp4">
+            </video>
             <div id="IntroAnimate_photo">
                   <!-- Swiper -->
                   <div class="swiper-container">
                         <div class="swiper-wrapper">
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
-                              <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/230px-Cat03.jpg" alt=""></div>
+                              <div class="swiper-slide">
+
+                                    <img src="Img/IntroAnimate/index-01.jpg" alt="">
+
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-02.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-03.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-04.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-03.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-04.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-01.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-02.jpg" alt="">
+                              </div>
+
                         </div>
                   </div>
-                   <!-- Add Arrows -->
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
             </div>
       </div>
+      <footer id="footer"></footer>
 
       <!-- JS　script -->
       <script src="JS/jquery-3.3.1.slim.min.js"></script>
@@ -139,7 +159,7 @@
                         clickable: true,
                   },
                   autoplay: {
-                        delay: 2000,
+                        delay: 5000,
                         disableOnInteraction: false,
                   },
                   navigation: {
