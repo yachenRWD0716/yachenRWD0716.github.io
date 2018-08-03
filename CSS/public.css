@@ -1,5 +1,5 @@
 #footer {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 240px;
     background-position:bottom;
@@ -8,6 +8,7 @@
     background-image: url(../Img/footer/footer.png);
     margin-top: 250px;
 }
+
 
 
 body{
