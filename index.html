@@ -4,9 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>今夜星辰</title>
-
-      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <title>首頁動畫</title>
 
       <!-- cs LINK -->
       <link rel="stylesheet" href="CSS/bootstrap.min.css">
@@ -16,45 +14,45 @@
       <style>
             html,
             body {
-                  /* position: relative; */
+                  position: relative;
                   height: 100%;
             }
 
             body {
-                  background: white;
+                  background: #eee;
                   font-size: 14px;
                   color: #000;
-                  margin: 0;
                   padding: 0;
-
             }
 
+            /* 動畫影片 */
 
-            /* 共通 */
+            #IntroAnimate_Shortfilm {
+                  max-width: 80%;
+                  height: 600px;
+                  margin: 0 auto;
+            }
 
-            h1 {
-                  width: 100%;
+            /* 四張為一單位輪播 */
+
+            #IntroAnimate_photo {
+                  position: relative;
+                  top: -150px;
                   padding: 50px;
-                  text-align: center;
-            }
+                  height: 234px;
 
-            /* index_Carousel-map */
-
-            #index_Carousel-map {
-                  padding: 20px;
             }
 
             .swiper-container {
-                  width: 90%;
-                  height: 50%;
-            }
+                  width: 100%;
 
+            }
 
             .swiper-slide {
                   text-align: center;
                   font-size: 18px;
                   background: #fff;
-                  /* Center slide text vertically */
+                  max-width: 234px;
                   display: -webkit-box;
                   display: -ms-flexbox;
                   display: -webkit-flex;
@@ -69,153 +67,17 @@
                   align-items: center;
             }
 
-            /* index_news_card */
 
-            #index_news {
-                  width: 90%;
-                  margin: 0 auto;
-                  padding: 25px;
-            }
-
-            .card {
-                  position: relative;
-                  height: 50%;
-                  border: none;
-                  background-image: url('Img/index/imgcover.png');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat;
-                  background-color: rgba(255, 255, 255, 0);
-
-
-            }
-
-            .card:hover .cover {
-                  display: block;
-            }
-
-            .card-img-top {
-                  border: none;
-                  width: 100%;
-                  height: 100%;
-                  position: relative;
-                  z-index: -2;
-                  top: 0;
-                  left: 0;
-                  /* background-image: url('Img/FarmView/test1.jpg');
-                  background-position: center;
-                  background-size: cover;
-                  background-repeat: no-repeat; */
-            }
-
-            .cover {
-                  position: absolute;
-                  z-index: -1;
-                  width: 100%;
-                  height: 100%;
-                  border: none;
-                  padding: 70px 95px;
-                  background-color: rgba(0, 0, 0, 0.8);
-                  display: none;
-
-
-            }
-
-            .covertitle {
-                  color: white;
-                  text-align: center;
-                  margin-bottom: 20px;
-                  font-size: 24px;
-                  line-height: 100px;
-                  border-bottom: dashed 1px rgba(255, 255, 255, 0.3);
-            }
-
-            .covertext {
-                  color: white;
-                  text-align: center;
-                  padding: 0 40px;
-
-            }
-
-            #index_news .card {
-                  margin-bottom: 50px;
-            }
-
-            .imgctrl {
-                  background-position: center;
-                  background-size: cover;
-                  width: 100%;
-                  height: 100%;
-
-            }
-
-            .sliderimg1 {
-                  background-image: url('Img/index/slider-01.jpg');
-            }
-
-            .sliderimg2 {
-                  background-image: url('Img/index/slider-02.jpg');
-            }
-
-            .sliderimg3 {
-                  background-image: url('Img/index/slider-03.jpg');
-            }
-
-            .headimg1 {
-                  background-image: url('Img/index/head-01.jpg');
-            }
-
-            .headimg2 {
-                  background-image: url('Img/index/head-02.jpg');
-            }
-
-            .headimg3 {
-                  background-image: url('Img/index/head-03.jpg');
-            }
-
-            .headimg4 {
-                  background-image: url('Img/index/head-04.jpg');
-            }
-
-            .headimg5 {
-                  background-image: url('Img/index/head-05.jpg');
-            }
-
-            .headimg6 {
-                  background-image: url('Img/index/head-06.jpg');
-            }
-
-            @media screen and (max-width: 1200px) {
-                  .cover {
-                        top: 0;
-                        display: block;
-                        background-color: rgba(0, 0, 0, 0.5);
-                  }
-
-                  .overflow {
-                        overflow: hidden;
-                  }
-                  .covertitle {
-                        font-size: 16px;
-                  }
-                  .covertext {
-                        font-size: 10px;
-                        padding:0 10px;
-                  }
-                  .swiper-container {
-                  width: 90%;
-                  height: 30%;
-            }
-            .special{
-                  background-position:0 0 !important; 
-            }
+            #footer {
+                  padding-top: 30%;
+                 
             }
       </style>
 </head>
 
 <body>
       <!-- Navbar -->
-      <div id="index_navbar">
+      <div id="IntroAnimate_navbar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <a class="navbar-brand" href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
@@ -234,145 +96,79 @@
                   </div>
             </nav>
       </div>
-      <!-- 輪播圖 -->
-      <div id="index_Carousel-map">
-            <!-- Swiper -->
-            <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                        <div class="swiper-slide sliderimg1 imgctrl"></div>
-                        <div class="swiper-slide sliderimg2 imgctrl"></div>
-                        <div class="swiper-slide sliderimg3 imgctrl special" style="background-position:0 580px;"></div>
+      <div id="IntroAnimate_Shortfilm">
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JSLje00xS6c" frameborder="0" allow="autoplay; encrypted-media"
+                  allowfullscreen></iframe> -->
+            <video width="100%" height="100%" autoplay loop>
+                  <source src="video/IntroAnimate.mp4" type="video/mp4">
+            </video>
+            <div id="IntroAnimate_photo">
+                  <!-- Swiper -->
+                  <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+
+                                    <img src="Img/IntroAnimate/index-01.jpg" alt="">
+
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-02.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-03.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-04.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-03.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-04.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-01.jpg" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="Img/IntroAnimate/index-02.jpg" alt="">
+                              </div>
+
+                        </div>
                   </div>
                   <!-- Add Arrows -->
-                  <div class="swiper-pagination"></div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
             </div>
-      </div>
-      <!-- H1 最新消息 H1 -->
-      <h1>最新消息</h1>
-      <!-- 最新消息卡片 -->
-      <div id="index_news">
-            <div class="card-deck">
-                  <div class="row w-100">
-                        <div class="col-12 col-md-6 col-xl-4 overflow">
-                              <div class="card">
-                                    <div class="cover">
-                                          <div class="covertitle">
-                                                新增夥伴
-                                          </div>
-                                          <div class="covertext">園區內新來了好多新夥伴呢~大家快來尋找牠們的身影吧~
-                                          </div>
-                                    </div>
-                                    <div class="card-img-top imgctrl headimg1" style="background-position-x: -20px">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 overflow">
-                              <div class="card">
-                                    <div class="cover">
-                                          <div class="covertitle">
-                                                懶洋洋的熊
-                                          </div>
-                                          <div class="covertext">懶懶熊今天吃太飽了!
-                                          </div>
-                                    </div>
-                                    <div class="card-img-top imgctrl headimg2" style="background-size: cover; background-position-x: -150px ;">
-
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 overflow">
-                              <div class="card">
-                                    <div class="cover">
-                                          <div class="covertitle">
-                                                白馬王子
-                                          </div>
-                                          <div class="covertext">摳摳摳摳摳~有一隻白馬跑過來了，馬車裡面有誰呢~?
-                                          </div>
-                                    </div>
-                                    <div class="card-img-top imgctrl headimg3 " style="background-size: cover; background-position-x: -40px ;">
-
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 overflow">
-                              <div class="card">
-                                    <div class="cover">
-                                          <div class="covertitle">
-                                                人氣羊駝
-                                          </div>
-                                          <div class="covertext">票選出爐了~這個月最受歡迎的羊駝是阿棕~
-                                          </div>
-
-                                    </div>
-                                    <div class="card-img-top imgctrl headimg4" style="background-size: contain; background-position: 20px 60px;">
-
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 overflow">
-                              <div class="card">
-                                    <div class="cover">
-                                          <div class="covertitle">
-                                                柴柴愛今夜
-                                          </div>
-                                          <div class="covertext">連柴柴喜歡今夜星辰，各位產屎官!快點帶著毛小孩來今夜星辰吧~
-                                          </div>
-
-                                    </div>
-                                    <div class="card-img-top imgctrl headimg5" style="background-position-y: 40px">
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4 overflow">
-                              <div class="card">
-                                    <div class="cover">
-                                          <div class="covertitle">
-                                                親近駱馬
-                                          </div>
-                                          <div class="covertext">駱馬小皮跟遊客親密的互動，太可愛了吧!
-                                          </div>
-
-                                    </div>
-                                    <div class="card-img-top imgctrl headimg6">
-
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-
-            </div>
-
-
-
-
-
+            
       </div>
       <footer id="footer">
-
+            
       </footer>
       <!-- JS　script -->
       <script src="JS/jquery-3.3.1.slim.min.js"></script>
       <script src="JS/popper.min.js"></script>
       <script src="JS/bootstrap.min.js"></script>
       <script src="JS/swiper.min.js"></script>
-      <!-- index_Carousel-map -->
+
       <script>
             var swiper = new Swiper('.swiper-container', {
-                  slidesPerView: 1,
-                  spaceBetween: 30,
+                  slidesPerView: 4,
+                  spaceBetween: 60,
+                  slidesPerGroup: 4,
                   loop: true,
-                  mousewheel: true,
+                  loopFillGroupWithBlank: true,
+                  pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                  },
                   autoplay: {
-                        delay: 2500,
+                        delay: 5000,
                         disableOnInteraction: false,
                   },
                   navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                   },
-
             });
       </script>
 </body>
