@@ -8,10 +8,15 @@
       <!-- cs LINK -->
       <link rel="stylesheet" href="CSS/bootstrap.min.css">
       <link rel="stylesheet" href="CSS/swiper.min.css">
+      <link rel="stylesheet" href="CSS/public.css">
       <style>
+            * {
+                  color: #717071;
+            }
+
             #ContactUs {
                   width: 100%;
-                  height: 100%-;
+                  height: 600px;
                   padding-top: 50px;
             }
 
@@ -19,67 +24,96 @@
                   width: 100%;
             }
 
-            .ContactUs_left_logo {
-                  height: 100px;
+            .ContactUs_left_block {
                   width: 100%;
+                  margin-bottom: 25px;
                   background-color: aquamarine;
             }
 
-            .ContactUs_left_call {
-                  width: 100%;
-                  height: 50px;
-                  background-color: blanchedalmond;
+            .ContactUs-logo {
+                  width: 260px;
             }
 
-            .ContactUs_left_tel {
-                  width: 100%;
-                  height: 50px;
-                  background-color: aquamarine;
+            .ContactUs-icon {
+                  margin-right: 20px;
+                  height: 30px;
             }
 
-            .ContactUs_right {
+            .ContactUs_right_box {
                   width: 100%;
-                  height: 60%;
-                  padding: 20px;
-                  background-color: blanchedalmond;
-            }
-
-            .bottom {
-                  float: right;
+                  height: 400px;
+                  background-color: blue;
             }
       </style>
 </head>
 
 <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                        <li class="nav-item active">
+                              <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                              </a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                  </ul>
+            </div>
+      </nav>
       <div id="ContactUs">
+
             <div class="container">
                   <div class="row">
                         <div class="col-12 col-md-6">
                               <div class="ContactUs_left">
-                                    <div class="ContactUs_left_logo"></div>
-                                    <div class="ContactUs_left_call"></div>
-                                    <div class="ContactUs_left_tel"></div>
+                                    <div class="ContactUs_left_block">
+                                          <img class="ContactUs-logo" src="Img/ContactUs/logo.png" alt="">
+                                    </div>
+                                    <div class="ContactUs_left_block">
+                                          <img class="ContactUs-icon" src="Img/ContactUs/call.png" alt=""> 04-7323111
+                                    </div>
+                                    <div class="ContactUs_left_block">
+                                          <img class="ContactUs-icon" src="Img/ContactUs/facebook-logo.png" alt=""> 今夜星辰休閒農場
+                                    </div>
+
+                                    <div class="ContactUs_left_block">
+                                          <img class="ContactUs-icon" src="Img/ContactUs/home-page.png" alt=""> 彰化縣彰化市石牌路一段428號
+                                    </div>
 
                               </div>
                         </div>
                         <div class="col-12 col-md-6">
-                              <div class="ContactUs_right">
+                              <div class="ContactUs_right_box">
                                     <form>
                                           <div class="form-group">
-                                                <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="姓名/公司名稱">
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                           </div>
                                           <div class="form-group">
-                                                <input type="call" class="form-control" id="exampleInputcall" placeholder="電話">
+
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                           </div>
                                           <div class="form-group">
-                                                <input type="mail" class="form-control" id="exampleInputmail" placeholder="信箱">
+
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                           </div>
                                           <div class="form-group">
-                                                <textarea type="mes" class="form-control" rows="5" id="comment" placeholder="訊息"></textarea>
+
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                                           </div>
-                                          <div class="bottom">
-                                                <button type="submit" class="btn btn-primary">送出</button>
-                                          </div>
+                                          <button type="submit" class="btn btn-primary" style="align:center;" >送出</button>
                                     </form>
 
                               </div>
@@ -87,6 +121,7 @@
                   </div>
             </div>
       </div>
+      <div id="footer"></div>
       <!-- JS　script -->
       <script src=" JS/jquery-3.3.1.slim.min.js "></script>
       <script src="JS/popper.min.js "></script>
