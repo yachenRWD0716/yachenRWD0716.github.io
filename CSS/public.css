@@ -19,3 +19,11 @@ body{
 tt{margin-bottom: 100px;}
 
 #box{margin-bottom: 45px; }
+/*標題*/
+
+.faemeview_title_img {
+    text-align: center;
+    display: block;
+    margin: 0 auto 60px;
+    width: 395px;
+}
