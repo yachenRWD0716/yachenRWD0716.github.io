@@ -1,7 +1,6 @@
 #navbarblock {
       width: 100%;
       background-color: #0AAF4B;
-      height: 80px;
 }
 
 .dropdown {
@@ -52,7 +51,9 @@ body {
       text-decoration: none;
       background-color: #4b2b52;
 }
-
+.collapse{
+      margin-bottom: -10;
+}
 /* hover */
 
 #index:hover #indexiconHover img {
@@ -71,10 +72,9 @@ body {
       color: #897049 !important;
 }
 
-#view:hover #viewiconHover img:hover {
+#view:hover #viewiconHover:hover  img {
       content: url('../Icon/01-nav/hover/viewhover.png');
 }
-
 #view:hover #viewiconHover>p {
       color: #897049 !important;
 }
