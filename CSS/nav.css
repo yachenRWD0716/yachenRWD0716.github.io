@@ -15,7 +15,6 @@ body {
       padding: 5px 0px;
       text-align: center;
       color: white;
-
 }
 
 .logo {
@@ -24,16 +23,9 @@ body {
 
 .nav-menu {
       width: 35px;
-
 }
 
 .nav-menu-block {
-      text-align: center;
-
-}
-
-.nav-menu1 {
-      padding: 5px 0px;
       text-align: center;
 }
 
@@ -45,71 +37,60 @@ body {
 .nav-item.dropdown {
       transition-duration: 5s;
       transition-timing-function: ease-in-out;
-
 }
 
 /* hover */
 
-#indexiconHover :nth-child(2) {
-      display: none;
-}
-
-#index:hover #indexiconHover :nth-child(2) {
-      display: block;
-}
-
-#index:hover #indexiconHover :nth-child(1) {
-      display: none;
+#indexiconHover img:hover {
+      content: url('../Icon/01-nav/hover/indexhover.png');
 }
 
 #index:hover #indexiconHover>p {
       color: #897049 !important;
 }
 
-#originiconHover :nth-child(2) {
-      display: none;
-}
-
-#origin:hover #originiconHover :nth-child(2) {
-      display: block;
-}
-
-#origin:hover #originiconHover :nth-child(1) {
-      display: none;
+#originiconHover img:hover {
+      content: url('../Icon/01-nav/hover/originhover.png');
 }
 
 #origin:hover #originiconHover>p {
       color: #897049 !important;
 }
 
-#viewiconHover :nth-child(2) {
-      display: none;
-}
-
-#view:hover #viewiconHover :nth-child(2) {
-      display: block;
-}
-
-#view:hover #viewiconHover :nth-child(1) {
-      display: none;
+#viewiconHover img:hover {
+      content: url('../Icon/01-nav/hover/viewhover.png');
 }
 
 #view:hover #viewiconHover>p {
       color: #897049 !important;
 }
 
-#contacticonHover :nth-child(2) {
-      display: none;
-}
-
-#contact:hover #contacticonHover :nth-child(2) {
-      display: block;
-}
-
-#contact:hover #contacticonHover :nth-child(1) {
-      display: none;
+#contacticonHover img:hover {
+      content: url('../Icon/01-nav/hover/contacthover.png');
 }
 
 #contact:hover #contacticonHover>p {
       color: #897049 !important;
+}
+
+html,
+body {
+      /* position: relative; */
+      height: 100%;
+}
+
+body {
+      background: white;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+}
+
+/* 共通 */
+
+h1 {
+      width: 100%;
+      padding: 50px;
+      text-align: center;
 }
