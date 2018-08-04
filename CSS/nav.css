@@ -38,6 +38,11 @@ body {
       transition-duration: 5s;
       transition-timing-function: ease-in-out;
 }
+.dropdown-item:focus, .dropdown-item:hover {
+      color: #FFF;
+      text-decoration: none;
+      background-color: #4b2b52;
+  }
 
 /* hover */
 
