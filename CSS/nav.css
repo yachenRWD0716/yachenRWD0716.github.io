@@ -46,7 +46,7 @@ body {
 
 /* hover */
 
-#indexiconHover img:hover {
+#index:hover #indexiconHover img {
       content: url('../Icon/01-nav/hover/indexhover.png');
 }
 
@@ -54,7 +54,7 @@ body {
       color: #897049 !important;
 }
 
-#originiconHover img:hover {
+#origin:hover #originiconHover img {
       content: url('../Icon/01-nav/hover/originhover.png');
 }
 
@@ -62,7 +62,7 @@ body {
       color: #897049 !important;
 }
 
-#viewiconHover img:hover {
+#view:hover #viewiconHover img:hover {
       content: url('../Icon/01-nav/hover/viewhover.png');
 }
 
@@ -70,7 +70,7 @@ body {
       color: #897049 !important;
 }
 
-#contacticonHover img:hover {
+#contact:hover #contacticonHover img {
       content: url('../Icon/01-nav/hover/contacthover.png');
 }
 
