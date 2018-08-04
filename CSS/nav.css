@@ -78,6 +78,10 @@ body {
       color: #897049 !important;
 }
 
+.dropdown:hover .dropdown-menu{
+      display:block;
+   }
+
 html,
 body {
       /* position: relative; */
