@@ -28,23 +28,86 @@
 
 <body>
     <div id="FarmView_animal">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home
-                        <span class="sr-only">(current)</span>
+        <div id="navbarblock">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#" style="margin-right: 0px;">
+                        <img class="logo" src="Icon/01-nav/logo.png" alt="">
                     </a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
-                </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item" id="index">
+                                <a class="nav-link" href="index_title.html">
+                                    <div class="nav-menu-block" id="indexiconHover">
+                                        <img class="nav-menu" src="Icon/01-nav/index.png" alt="">
+                                        <p style="color: white"> 首 頁</p>
+                                    </div>
+                                </a>
+                            </li>
+    
+                            <li class="nav-item dropdown" id="origin">
+                                <a class="nav-link" href="FarmInfo.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="nav-menu-block" id="originiconHover">
+                                        <img class="nav-menu" src="Icon/01-nav/origin.png" alt="">
+                                        <p style="color: white">今夜緣起</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
+                                    <a class="dropdown-item" href="FarmInfo.html">
+                                        <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
+                                    </a>
+                                    <a class="dropdown-item" href="FarmInfo.html">
+                                        <img class="img-block" src="Icon/01-nav/news.png" alt="">農場須知
+                                    </a>
+                                    <a class="dropdown-item" href="FarmInfo.html">
+                                        <img class="img-block" src="Icon/01-nav/traffic.png" alt="">交通資訊
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" id="view">
+                                <a class="nav-link " id="navbarDropdownMenuLink" href="FarmView.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="nav-menu-block" id="viewiconHover">
+                                        <img class="nav-menu" src="Icon/01-nav/view.png" alt="" style="width: 40px;">
+                                        <p style="color: white">園區景點 </p>
+    
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
+                                    <a class="dropdown-item" href="FarmView.html">
+                                        <img class="img-block" src="Icon/01-nav/map.png" alt=""> 園區地圖
+                                    </a>
+                                    <a class="dropdown-item" href="FarmView_play.html">
+                                        <img class="img-block" src="Icon/01-nav/play.png" alt=""> 同樂星辰
+                                    </a>
+                                    <a class="dropdown-item" href="FarmView_animal_1.html">
+                                        <img class="img-block" src="Icon/01-nav/animal.png" alt=""> 動物星辰
+                                    </a>
+                                    <a class="dropdown-item" href="FarmView_picture.html">
+                                        <img class="img-block" src="Icon/01-nav/picture.png" alt=""> 今夜拍拍
+                                    </a>
+                                    <a class="dropdown-item" href="FarmView_eat.html">
+                                        <img class="img-block" src="Icon/01-nav/food.png" alt=""> 今夜美食
+                                    </a>
+    
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" id="contact">
+                                <a class="nav-link" id="navbarDropdownMenuLink" href="ContactUs.html">
+                                    <div class="nav-menu-block" id="contacticonHover" href="ContactUs.html">
+                                        <img class="nav-menu" src="Icon/01-nav/contact.png" alt="">
+                                        <p style="color: white">聯絡我們</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
