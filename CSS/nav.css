@@ -3,14 +3,16 @@
       background-color: #0AAF4B;
 }
 
+.nav-item dropdown{
+      padding: 20px 15px;
+}
 .dropdown {
       padding: 0px 15px;
-}
+  }
 
 body {
       font-family: Arial, "微軟正黑體", sans-serif;
 }
-
 .navbar-nav .dropdown-menu {
       left: -30;
       position: static;
@@ -22,7 +24,9 @@ body {
       text-align: center;
       color: white;
 }
-
+.collapse{
+      height: 60px;
+}
 .logo {
       width: 240px;
 }
@@ -52,7 +56,7 @@ body {
       background-color: #4b2b52;
 }
 .collapse{
-      margin-bottom: -4;
+      margin-top: 20;
 }
 /* hover */
 
@@ -91,7 +95,7 @@ body {
       display: block;
 }
 .dropdown-menu{
-      margin-top: -4;
+      margin-top: -2;
 }
 
 html,
