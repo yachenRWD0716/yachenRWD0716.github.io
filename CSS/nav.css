@@ -57,7 +57,7 @@ body {
       background-color: #4b2b52;
 }
 .collapse{
-      transform: translateY(-15px);
+      margin-bottom: -20;
 }
 /* hover */
 
