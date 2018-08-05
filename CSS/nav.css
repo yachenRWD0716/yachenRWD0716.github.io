@@ -1,6 +1,7 @@
 #navbarblock{
       width: 100%;
       background-color: #0AAF4B;
+      height: 90px;
 }
 
 .nav-item dropdown{
@@ -14,6 +15,7 @@ body {
       font-family: Arial, "微軟正黑體", sans-serif;
 }
 .navbar-nav .dropdown-menu {
+      
       left: -30;
       position: static;
       top: 89;
@@ -30,7 +32,10 @@ body {
 .logo {
       width: 240px;
 }
+.navbar{
+      height: 80px;
 
+}
 .nav-menu {
       width: 35px;
 }
@@ -43,7 +48,9 @@ body {
       width: 15px;
       margin-right: 10px;
 }
-
+.nav-item{
+      margin-top: 20px;
+}
 .nav-item.dropdown {
       transition-duration: 5s;
       transition-timing-function: ease-in-out;
