@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="CSS/swiper.min.css">
     <link rel="stylesheet" href="CSS/public.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <style>
         /* index_Carousel-map */
@@ -290,7 +292,10 @@
         </div>
   </div>
     <!-- 輪播圖 -->
-    <div id="index_Carousel-map">
+    <div id="index_Carousel-map" data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -305,7 +310,8 @@
         </div>
     </div>
     <!-- H1 最新消息 H1 -->
-    <div class="row">
+    <div class="row"  data-aos="fade-up"
+    data-aos-duration="1500">
         <div class="col-12">
             <div class="FarmView_animal_title">
                 <div class="faemeview_title_img">
@@ -316,7 +322,7 @@
     </div>
     <!-- 最新消息卡片 -->
 
-    <div id="index_news">
+    <div id="index_news" data-aos="zoom-in" data-aos-duration="1000">
         <div class="card-deck">
             <div class="row w-100">
 
@@ -378,6 +384,10 @@
         <script src="JS/popper.min.js"></script>
         <script src="JS/bootstrap.min.js"></script>
         <script src="JS/swiper.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                AOS.init();
+              </script>
         <!-- index_Carousel-map -->
         <script>
             var swiper = new Swiper('.swiper-container', {
