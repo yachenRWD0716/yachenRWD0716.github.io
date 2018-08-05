@@ -102,7 +102,7 @@ body {
       display: block;
 }
 .dropdown-menu{
-      transform: translateY(-7px);
+      margin-top: 9px;
 }
 
 html,
