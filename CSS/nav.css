@@ -1,7 +1,7 @@
 #navbarblock {
       width: 100%;
       background-color: #0AAF4B;
-      height: 90px;
+
 }
 
 .nav-item dropdown {
@@ -29,7 +29,7 @@ body {
 }
 
 .collapse {
-      height: 60px;
+   
 }
 
 .logo {
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar {
-      height: 80px;
+      
 }
 
 .nav-menu {
