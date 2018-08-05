@@ -47,32 +47,35 @@
             width: 90%;
             margin: 0 auto;
             padding: 25px;
+           
         }
 
         .card {
             position: relative;
             height: 55%;
             border: none;
-            background-image: url('Img/index/imgcover1.png');
+            background-image: url("Img/index/imgcover1.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             background-color: rgba(255, 255, 255, 0);
+            z-index:3 ;
         }
 
         .card2 {
             position: relative;
             height: 55%;
             border: none;
-            background-image: url('Img/index/imgcover2.png');
+            background-image: url("Img/index/imgcover2.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             background-color: rgba(255, 255, 255, 0);
+            z-index:3 ;
         }
 
-        .card:hover .cover {
-            display: block;
+        .cover:hover {background-image: url("Img/index/imgcover3.png");display: block;
+          
         }
 
         .card-img-top {
@@ -80,23 +83,36 @@
             width: 100%;
             height: 100%;
             position: relative;
-            z-index: -2;
+            
             top: 0;
             left: 0;
         }
 
-        .cover {
+.cover {
             position: absolute;
-            z-index: -1;
+           
             width: 100%;
             height: 100%;
             border: none;
-            padding: 70px 95px;
-            background-color: rgba(0, 0, 0, 0.8);
+            padding: 70px 150px;
+            background-image: url("Img/index/head-01-cover.png");
             display: none;
 
 
         }
+        .cover-img1 {
+            position: absolute;
+           
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 70px 150px;
+            background-image: url("Img/index/head-01-cover.png");
+           
+
+
+        }
+        
 
         .covertitle {
             color: white;
@@ -128,10 +144,11 @@
 
         .sliderimg1 {
             background-image: url('Img/index/slider-01.jpg');
+            z-index: 1;
         }
 
         .sliderimg2 {
-            background-image: url('Img/index/slider-02.jpg');
+            background-image: url('Img/index/slider-02.jpg'); z-index: 1;
         }
 
         .sliderimg3 {
@@ -139,27 +156,27 @@
         }
 
         .headimg1 {
-            background-image: url('Img/index/head-01.jpg');
+            background-image: url('Img/index/head-01.png');
         }
 
         .headimg2 {
-            background-image: url('Img/index/head-02.jpg');
+            background-image: url('Img/index/head-02.png');
         }
 
         .headimg3 {
-            background-image: url('Img/index/head-03.jpg');
+            background-image: url('Img/index/head-03.png');
         }
 
         .headimg4 {
-            background-image: url('Img/index/head-04.jpg');
+            background-image: url('Img/index/head-04.png');
         }
 
         .headimg5 {
-            background-image: url('Img/index/head-05.jpg');
+            background-image: url('Img/index/head-05.png');
         }
 
         .headimg6 {
-            background-image: url('Img/index/head-06.jpg');
+            background-image: url('Img/index/head-06.png');
         }
 
 
@@ -188,6 +205,12 @@
                 background-position: 0 0 !important;
             }
         }
+        .bbg{background-image: url("Img/index/11.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+         
+    }
     </style>
 </head>
 
@@ -299,91 +322,95 @@
         </div>
     </div>
     <!-- 最新消息卡片 -->
+    <div class="bbg">
     <div id="index_news">
         <div class="card-deck">
             <div class="row w-100">
                 <div class="col-12 col-md-6 col-xl-4 overflow">
-                    <div class="card card2">
-                        <div class="cover">
-                            <div class="covertitle">
-                                新增夥伴
-                            </div>
-                            <div class="covertext">園區內新來了好多新夥伴呢~大家快來尋找牠們的身影吧~
-                            </div>
-                        </div>
-                        <div class="card-img-top imgctrl headimg1" style="background-position-x: -20px">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 overflow">
                     <div class="card ">
-                        <div class="cover">
-                            <div class="covertitle">
-                                懶洋洋的熊
-                            </div>
-                            <div class="covertext">懶懶熊今天吃太飽了!
-                            </div>
-                        </div>
-                        <div class="card-img-top imgctrl headimg2" style="background-size: cover; background-position-x: -150px ;">
-
+                        
+                        <div class="card-img-top imgctrl headimg1">
+                                <div class="cover cover-img1">
+                                        <div class="covertitle">
+                                            新增夥伴
+                                        </div>
+                                        <div class="covertext">園區內新來了好多新夥伴呢~大家快來尋找牠們的身影吧~
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 overflow">
                     <div class="card card2">
-                        <div class="cover">
-                            <div class="covertitle">
-                                白馬王子
-                            </div>
-                            <div class="covertext">摳摳摳摳摳~有一隻白馬跑過來了，馬車裡面有誰呢~?
-                            </div>
-                        </div>
-                        <div class="card-img-top imgctrl headimg3 " style="background-size: cover; background-position-x: -40px ;">
-
+                        
+                        <div class="card-img-top imgctrl headimg2" >
+                                <div class="cover">
+                                        <div class="covertitle">
+                                            懶洋洋的熊
+                                        </div>
+                                        <div class="covertext">懶懶熊今天吃太飽了!
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 overflow">
                     <div class="card ">
-                        <div class="cover">
-                            <div class="covertitle">
-                                人氣羊駝
-                            </div>
-                            <div class="covertext">票選出爐了~這個月最受歡迎的羊駝是阿棕~
-                            </div>
-
-                        </div>
-                        <div class="card-img-top imgctrl headimg4" style="background-size: contain; background-position: 20px 60px;">
-
+                        
+                        <div class="card-img-top imgctrl headimg3 " >
+                                <div class="cover">
+                                        <div class="covertitle">
+                                            白馬王子
+                                        </div>
+                                        <div class="covertext">摳摳摳摳摳~有一隻白馬跑過來了，馬車裡面有誰呢~?
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 overflow">
                     <div class="card card2">
-                        <div class="cover">
-                            <div class="covertitle">
-                                柴柴愛今夜
-                            </div>
-                            <div class="covertext">連柴柴喜歡今夜星辰，各位產屎官!快點帶著毛小孩來今夜星辰吧~
-                            </div>
-
-                        </div>
-                        <div class="card-img-top imgctrl headimg5" style="background-position-y: 40px">
+                        
+                        <div class="card-img-top imgctrl headimg4" >
+                                <div class="cover">
+                                        <div class="covertitle">
+                                            人氣羊駝
+                                        </div>
+                                        <div class="covertext">票選出爐了~這個月最受歡迎的羊駝是阿棕~
+                                        </div>
+            
+                                    </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 overflow">
                     <div class="card ">
-                        <div class="cover">
-                            <div class="covertitle">
-                                親近駱馬
-                            </div>
-                            <div class="covertext">駱馬小皮跟遊客親密的互動，太可愛了吧!
-                            </div>
-
+                        
+                        <div class="card-img-top imgctrl headimg5" >
+                                <div class="cover">
+                                        <div class="covertitle">
+                                            柴柴愛今夜
+                                        </div>
+                                        <div class="covertext">連柴柴喜歡今夜星辰，各位產屎官!快點帶著毛小孩來今夜星辰吧~
+                                        </div>
+            
+                                    </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 overflow">
+
+                    <div class="card card2">
+                       
                         <div class="card-img-top imgctrl headimg6">
-
+                                <div class="cover">
+                                        <div class="covertitle">
+                                            親近駱馬
+                                        </div>
+                                        <div class="covertext">駱馬小皮跟遊客親密的互動，太可愛了吧!
+                                        </div>
+            
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -396,6 +423,7 @@
 
 
     </div>
+</div>
     <div id="footer">
 
     </div>
