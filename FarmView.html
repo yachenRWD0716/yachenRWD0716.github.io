@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="CSS/swiper.min.css">
       <link rel="stylesheet" href="CSS/public.css">
       <link rel="stylesheet" href="CSS/nav.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <style>
             .FarmView_content_title {
                   width: 100%;
@@ -233,7 +234,8 @@
                   <div class="container">
 
                         <div class="row">
-                              <div class="col-12">
+                              <div class="col-12" data-aos="fade-up"
+                              data-aos-duration="2000">
                                     <div class="FarmView_content_title">
                                           <div class="faemeview_title_img">
                                                 <img src="Img/tilte/FarmView_title.svg">
@@ -243,22 +245,25 @@
                                     <div class="col-12" id="box"></div>
                               </div>
                         </div>
-                        <div class="row" style="margin-bottom: 108px">
+                        <div class="row" style="margin-bottom: 108px" >
                               <div class="col-12">
-                                    <div class="FarmView_content_map" id="FarmView_content_map_id"></div>
+                                    <div class="FarmView_content_map" id="FarmView_content_map_id" data-aos="fade-up"
+                                    data-aos-duration="2000"></div>
                               </div>
 
                         </div>
                         <div class="row">
-                              <div class="col-12">
-                                    <strong class="data-v-4559be12">〖 環境設施 〗</strong>
+                              <div class="col-12" >
+                                    <strong class="data-v-4559be12" data-aos="fade-up"
+                                    data-aos-duration="1000">〖 環境設施 〗</strong>
                                     <div class="col-12" id="box">
                                     </div>
                               </div>
                         </div>
 
                         <!-- 同樂星辰 -->
-                        <div class="row" style="margin-bottom: 150px; padding: 0 15px">
+                        <div class="row" style="margin-bottom: 150px; padding: 0 15px" data-aos="fade-up"
+                        data-aos-duration="2000">
 
                               <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
 
@@ -336,6 +341,10 @@
       <script src="JS/popper.min.js "></script>
       <script src="JS/bootstrap.min.js "></script>
       <script src="JS/swiper.min.js "></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+                  AOS.init();
+                </script>
 </body>
 
 
