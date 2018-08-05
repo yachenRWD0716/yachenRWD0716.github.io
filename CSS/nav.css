@@ -57,10 +57,10 @@ body {
       margin-top: 20px;
 }
 
-.nav-item.dropdown {
+/* .nav-item.dropdown {
       transition-duration: 5s;
       transition-timing-function: ease-in-out;
-}
+} */
 
 .dropdown-item:focus,
 .dropdown-item:hover {
