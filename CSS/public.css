@@ -30,3 +30,9 @@ tt{margin-bottom: 100px;}
     margin: 0 auto 60px;
     width: 395px;
 }
+.FarmView_animal_title {
+    height: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 100px 0;
+}
