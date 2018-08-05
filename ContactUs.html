@@ -18,7 +18,7 @@
         #ContactUs {
             width: 100%;
             height: 600px;
-            padding: 50px 20px 0px;
+            padding: 50px 22% 0px;
             background-color: #74C0D1;
         }
 
@@ -67,11 +67,58 @@
             position: absolute;
             top: 0;
             left: 10%;
-
             width: 80%;
             height: 50px;
             background-color: #333333;
 
+        }
+
+        .form-group {
+            height: 38px;
+        }
+
+        .textIcon {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 10%;
+            height:36px;
+            float: left;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            background-color: white;   
+        }
+        .textIconS {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height:36px;
+            float: left;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            background-color: white;   
+        }
+
+
+        .textarea {
+            float: left;
+            width: 90%;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
 
         #footer {
@@ -79,8 +126,9 @@
             margin-top: 0px;
             width: 100%;
         }
-        .row{
-            margin: 0 25px ;
+
+        .row {
+            margin: 0 25px;
         }
     </style>
 </head>
@@ -195,23 +243,35 @@
                             </div>
                             <div class="ContactUs_right_block2">
                                 <form>
-                                    <div class="form-group">
 
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="姓名／公司名稱">
-                                    </div>
                                     <div class="form-group">
+                                        <div class="textIcon" style="background-image:url('Img/ContactUs/form-icon-02.png')"></div>
+                                        <div class="textarea">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="姓名／公司名稱">
+                                        </div>
+                                    </div>
 
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="電話">
-                                    </div>
                                     <div class="form-group">
+                                        <div class="textIcon" style="background-image:url('Img/ContactUs/form-icon-03.png') ;"></div>
+                                        <div class="textarea">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="電話">
+                                        </div>
+                                    </div>
 
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="信箱">
-                                    </div>
                                     <div class="form-group">
-                                        <textarea type="email" class="form-control" id="exampleFormControlInput1" rows="4" cols="600px" placeholder="fdgdgdfgd">
-                                            
-                                        </textarea>
-                                        <img src="Img/ContactUs/call.png" style="height: 25px;" alt="">
+                                        <div class="textIcon" style="background-image:url('Img/ContactUs/form-icon-04.png')"></div>
+                                        <div class="textarea">
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="信箱">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group" style="height:108px;">
+                                            <div class="textIcon" style=" height:100%; padding-bottom:50px;">
+                                                <div class="textIconS" style="background-image:url('Img/ContactUs/form-icon-05.png');"></div>
+                                            </div>
+                                            <div class="textarea">
+                                        <textarea  type="text"  class="form-control" id="exampleFormControlInput1" rows="4" cols="600px" placeholder="訊息"></textarea>
+                                    </div>
                                     </div>
                                     <div class="form-group" style="width: 100%;text-align: center;">
                                         <button type="submit" class="btn btn-primary">送出</button>
