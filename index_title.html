@@ -22,6 +22,10 @@
             height: 80%;
         }
 
+        .row {
+            margin: 0;
+        }
+
         .swiper-slide {
             text-align: center;
             font-size: 18px;
@@ -41,99 +45,6 @@
             align-items: center;
         }
 
-        /* index_news_card */
-
-        #index_news {
-            width: 90%;
-            margin: 0 auto;
-            padding: 25px;
-           
-        }
-
-        .card {
-            position: relative;
-            height: 55%;
-            border: none;
-            background-image: url("Img/index/imgcover1.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-color: rgba(255, 255, 255, 0);
-            z-index:3 ;
-        }
-
-        .card2 {
-            position: relative;
-            height: 55%;
-            border: none;
-            background-image: url("Img/index/imgcover2.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-color: rgba(255, 255, 255, 0);
-            z-index:3 ;
-        }
-
-        .cover:hover {background-image: url("Img/index/imgcover3.png");display: block;
-          
-        }
-
-        .card-img-top {
-            border: none;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            
-            top: 0;
-            left: 0;
-        }
-
-.cover {
-            position: absolute;
-           
-            width: 100%;
-            height: 100%;
-            border: none;
-            padding: 70px 150px;
-            background-image: url("Img/index/head-01-cover.png");
-            display: none;
-
-
-        }
-        .cover-img1 {
-            position: absolute;
-           
-            width: 100%;
-            height: 100%;
-            border: none;
-            padding: 70px 150px;
-            background-image: url("Img/index/head-01-cover.png");
-           
-
-
-        }
-        
-
-        .covertitle {
-            color: white;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 24px;
-            line-height: 100px;
-            border-bottom: dashed 1px rgba(255, 255, 255, 0.3);
-        }
-
-        .covertext {
-            color: white;
-            text-align: center;
-            padding: 0 40px;
-        }
-
-
-        #index_news .card {
-            margin-bottom: 50px;
-        }
-
         .imgctrl {
             background-position: center;
             background-size: cover;
@@ -142,75 +53,141 @@
 
         }
 
+        /* index_news_card */
+
+        #index_news {
+            width: 90%;
+            margin: 0 auto;
+            padding: 25px;
+
+        }
+
+        .head01-cover {
+            background-image: url('Img/index/head-01.png');
+        }
+
+        .head02-cover {
+            background-image: url('Img/index/head-02.png')
+        }
+
+        .head03-cover {
+            background-image: url('Img/index/head-03.png')
+        }
+
+        .head04-cover {
+            background-image: url('Img/index/head-04.png')
+        }
+
+        .head05-cover {
+            background-image: url('Img/index/head-05.png')
+        }
+
+        .head06-cover {
+            background-image: url('Img/index/head-06.png')
+        }
+
+        .head {
+            position: relative;
+            height: 55%;
+            border: none;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 255, 255, 0);
+            display: block;
+        }
+
+
+
+        #head01:hover .head {
+            background-image: url('Img/index/head-01-cover.png');
+        }
+
+        #head02:hover .head {
+            background-image: url('Img/index/head-02-cover.png');
+        }
+
+        #head03:hover .head {
+            background-image: url('Img/index/head-03-cover.png');
+        }
+
+        #head04:hover .head {
+            background-image: url('Img/index/head-04-cover.png');
+        }
+
+        #head05:hover .head {
+            background-image: url('Img/index/head-05-cover.png');
+        }
+
+        #head06:hover .head {
+            background-image: url('Img/index/head-06-cover.png');
+        }
+
+
+
+
+
+
+
+
+
+
+
+        #index_news .card {
+            margin-bottom: 50px;
+        }
+
+
+
         .sliderimg1 {
             background-image: url('Img/index/slider-01.jpg');
             z-index: 1;
         }
 
         .sliderimg2 {
-            background-image: url('Img/index/slider-02.jpg'); z-index: 1;
+            background-image: url('Img/index/slider-02.jpg');
+            z-index: 1;
         }
 
         .sliderimg3 {
             background-image: url('Img/index/slider-03.jpg');
         }
 
-        .headimg1 {
-            background-image: url('Img/index/head-01.png');
-        }
-
-        .headimg2 {
-            background-image: url('Img/index/head-02.png');
-        }
-
-        .headimg3 {
-            background-image: url('Img/index/head-03.png');
-        }
-
-        .headimg4 {
-            background-image: url('Img/index/head-04.png');
-        }
-
-        .headimg5 {
-            background-image: url('Img/index/head-05.png');
-        }
-
-        .headimg6 {
-            background-image: url('Img/index/head-06.png');
-        }
-
-
-        @media screen and (max-width: 1200px) {
-            .cover {
-                top: 0;
-                display: block;
-                background-color: rgba(0, 0, 0, 0.5);
+        @media (max-width: 1200px) {
+            .head {
+                height: 65%;
             }
+        }
 
-            .overflow {
-                overflow: hidden;
-            }
-            .covertitle {
-                font-size: 16px;
-            }
-            .covertext {
-                font-size: 10px;
-                padding: 0 10px;
+        @media (max-width: 1024px) {
+            .head {
+                height: 45%;
             }
             .swiper-container {
                 width: 90%;
-                height: 30%;
-            }
-            .special {
-                background-position: 0 0 !important;
+                height: 50%;
             }
         }
-        .bbg{background-image: url("Img/index/11.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            
-         
-    }
+
+        @media (max-width: 766px) {
+            .head {
+                height: 80%;
+                margin-bottom: 60px
+            }
+        }
+        @media (max-width: 527px) {
+            .head {
+                height: 75%;
+                margin-bottom: 60px
+            }
+        }
+
+        @media (max-width: 414px) {
+            .head {
+                height: 60%;
+                margin-bottom: 60px
+            }
+        }
     </style>
 </head>
 
@@ -245,7 +222,7 @@
                                 </div>
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B" >
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
                                 <a class="dropdown-item" href="FarmInfo.html#section2">
                                     <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
                                 </a>
@@ -321,146 +298,95 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <!-- 最新消息卡片 -->
-    <div class="bbg">
-=======
-    <!-- 最新消息卡片瘋狂爆炸版 -->
->>>>>>> b205a06ca1951d297036f38680c48fb550dd8bf8
+
     <div id="index_news">
         <div class="card-deck">
             <div class="row w-100">
-                <div class="col-12 col-md-6 col-xl-4 overflow">
-                    <div class="card ">
-                        
-                        <div class="card-img-top imgctrl headimg1">
-                                <div class="cover cover-img1">
-                                        <div class="covertitle">
-                                            新增夥伴
-                                        </div>
-                                        <div class="covertext">園區內新來了好多新夥伴呢~大家快來尋找牠們的身影吧~
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 overflow">
-                    <div class="card card2">
-                        
-                        <div class="card-img-top imgctrl headimg2" >
-                                <div class="cover">
-                                        <div class="covertitle">
-                                            懶洋洋的熊
-                                        </div>
-                                        <div class="covertext">懶懶熊今天吃太飽了!
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 overflow">
-                    <div class="card ">
-                        
-                        <div class="card-img-top imgctrl headimg3 " >
-                                <div class="cover">
-                                        <div class="covertitle">
-                                            白馬王子
-                                        </div>
-                                        <div class="covertext">摳摳摳摳摳~有一隻白馬跑過來了，馬車裡面有誰呢~?
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 overflow">
-                    <div class="card card2">
-                        
-                        <div class="card-img-top imgctrl headimg4" >
-                                <div class="cover">
-                                        <div class="covertitle">
-                                            人氣羊駝
-                                        </div>
-                                        <div class="covertext">票選出爐了~這個月最受歡迎的羊駝是阿棕~
-                                        </div>
-            
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 overflow">
-                    <div class="card ">
-                        
-                        <div class="card-img-top imgctrl headimg5" >
-                                <div class="cover">
-                                        <div class="covertitle">
-                                            柴柴愛今夜
-                                        </div>
-                                        <div class="covertext">連柴柴喜歡今夜星辰，各位產屎官!快點帶著毛小孩來今夜星辰吧~
-                                        </div>
-            
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-4 overflow">
 
-                    <div class="card card2">
-                       
-                        <div class="card-img-top imgctrl headimg6">
-                                <div class="cover">
-                                        <div class="covertitle">
-                                            親近駱馬
-                                        </div>
-                                        <div class="covertext">駱馬小皮跟遊客親密的互動，太可愛了吧!
-                                        </div>
-            
-                                    </div>
-                        </div>
+                <div class="col-12 col-md-6 col-xl-4 overflow" id="head01">
+                    <div class="head head01-cover">
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-4 overflow" id="head02">
+                    <div class="head head02-cover">
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-4 overflow" id="head03">
+                    <div class="head head03-cover">
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-4 overflow" id="head04">
+                    <div class="head head04-cover">
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-xl-4 overflow" id="head05">
+                    <div class="head head05-cover">
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-xl-4 overflow" id="head06">
+                    <div class="head head06-cover">
+
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
         </div>
-
-
-
-
-
     </div>
-<<<<<<< HEAD
-</div>
     <div id="footer">
-=======
-    <!-- 最新消息卡片應急版 -->
->>>>>>> b205a06ca1951d297036f38680c48fb550dd8bf8
+
+        <!-- 最新消息卡片應急版 -->
 
 
 
-    <div id="footer">
-    </div>
-    <!-- JS　script -->
-    <script src="JS/jquery-3.3.1.slim.min.js"></script>
-    <script src="JS/popper.min.js"></script>
-    <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/swiper.min.js"></script>
-    <!-- index_Carousel-map -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            
-            // mousewheel: true, UX考量
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
 
-        });
-    </script>
+        <div id="footer">
+        </div>
+        <!-- JS　script -->
+        <script src="JS/jquery-3.3.1.slim.min.js"></script>
+        <script src="JS/popper.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <script src="JS/swiper.min.js"></script>
+        <!-- index_Carousel-map -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+
+                // mousewheel: true, UX考量
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+        </script>
 </body>
 
 </html>
