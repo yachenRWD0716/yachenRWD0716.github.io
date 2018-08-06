@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="CSS/public.css">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/animal.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         .FarmView_animal_title {
             height: 150px;
@@ -202,7 +204,10 @@
                         </div>
                     </div>
 
-            <div class="card-columns">
+            <div class="card-columns" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="500"
+            data-aos-offset="0">
                     <div class="card m-50">
                             <img class="card-img-top" src="Img/animal/Peacook/Peacook01.jpg" alt="Card image cap">
                     </div>
@@ -243,6 +248,11 @@
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+          </script>
+
 </body>
 
 </html>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/public.css">
     <link rel="stylesheet" href="CSS/animal.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .FarmView_animal_title {
             height: 150px;
@@ -26,7 +27,19 @@
         .clear {
             clear: both;
         }
-
+        .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-radius: .25rem;
+}
        
     </style>
 </head>
@@ -114,7 +127,7 @@
   </div>
     <div id="FarmView_animal">
        
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-12">
                     <div class="FarmView_animal_title">
@@ -206,7 +219,10 @@
                 </div>
             </div>
 
-            <div class="card-columns">
+            <div class="card-columns" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="500"
+            data-aos-offset="0">
                 <div class="card">
                     <img class="card-img-top" src="Img/animal/Alpaca/alpaca01.jpg" alt="Card image cap">
 
@@ -221,8 +237,9 @@
 
                 </div>
                 <div class="card ">
-
+                    <div class="card-body">
                     <img class="card-img-top" src="Img/animal/Alpaca/alpaca04.jpg" alt="Card image cap">
+                    </div>
 
 
                 </div>
@@ -257,6 +274,10 @@
     <script src="JS/popper.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
