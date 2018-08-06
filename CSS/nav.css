@@ -1,7 +1,6 @@
 #navbarblock {
       width: 100%;
       background-color: #0AAF4B;
-
 }
 
 .nav-item dropdown {
@@ -28,13 +27,9 @@ body {
       color: white;
 }
 
-
-
 .logo {
       width: 240px;
 }
-
-
 
 .nav-menu {
       width: 35px;
@@ -127,6 +122,17 @@ h1 {
       width: 100%;
       padding: 50px;
       text-align: center;
+}
+
+#btn {
+      position: absolute;
+      position: fixed;
+      right: 10px;
+      bottom: 30px;
+      -webkit-border-radius: 999px;
+      -moz-border-radius: 999px;
+      border-radius: 999px;
+      z-index: 20;
 }
 
 /* @media (max-width: 992px) {

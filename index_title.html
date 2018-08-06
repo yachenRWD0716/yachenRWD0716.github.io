@@ -171,16 +171,6 @@
             background-image: url('Img/index/slider-03.jpg');
         }
 
-        #btn {
-            position: absolute;
-            position: fixed;
-            right: 10px;
-            bottom: 30px;
-            -webkit-border-radius: 999px;
-            -moz-border-radius: 999px;
-            border-radius: 999px;
-            z-index: 20;
-        }
 
         @media (max-width: 1200px) {
             .head {
@@ -220,9 +210,10 @@
         }
     </style>
 </head>
-
 <body>
-    <a class="btn01" id="btn" href="#navbarblock">↑Top</a>
+    <a class="btn01" id="btn" href="#navbarblock">
+        <img src="Icon/01-nav/gotop.png" style="width: 50px;" alt="">
+    </a>
 
     <!-- Navbar -->
     <div id="navbarblock">
@@ -306,10 +297,7 @@
         </div>
     </div>
     <!-- 輪播圖 -->
-    <div id="index_Carousel-map" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0">
+    <div id="index_Carousel-map" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -324,8 +312,7 @@
         </div>
     </div>
     <!-- H1 最新消息 H1 -->
-    <div class="row"  data-aos="fade-up"
-    data-aos-duration="1500">
+    <div class="row" data-aos="fade-up" data-aos-duration="1500">
         <div class="col-12">
             <div class="FarmView_animal_title">
                 <div class="faemeview_title_img">
@@ -391,7 +378,6 @@
         </div>
     </div>
     <div id="footer">
-<<<<<<< HEAD
     </div>
     <!-- JS　script -->
     <script src="JS/jquery-3.3.1.slim.min.js"></script>
@@ -421,7 +407,7 @@
         $("#btn").on("click", function (e) {
             $('html,body').animate({
                 scrollTop: $("#navbarblock").offset().top
-            }, 1000);
+            },1000);
             e.preventDefault();
         });
 
@@ -473,39 +459,34 @@
             }
         })
     </script>
+    <!-- JS　script -->
+    <script src="JS/jquery-3.3.1.slim.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/swiper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- index_Carousel-map -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
 
-=======
-        <div id="footer">
-        </div>
-        <!-- JS　script -->
-        <script src="JS/jquery-3.3.1.slim.min.js"></script>
-        <script src="JS/popper.min.js"></script>
-        <script src="JS/bootstrap.min.js"></script>
-        <script src="JS/swiper.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-                AOS.init();
-              </script>
-        <!-- index_Carousel-map -->
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: true,
+            // mousewheel: true, UX考量
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-                // mousewheel: true, UX考量
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-
-            });
-        </script>
->>>>>>> 92ac5ee97818c46a58cbf6d88fd9095b51b82105
+        });
+    </script>
 </body>
 
 </html>

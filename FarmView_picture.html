@@ -42,6 +42,10 @@ margin-top:250px ;}
 </head>
 
 <body>
+        <a class="btn01" id="btn" href="#navbarblock">
+                <img src="Icon/01-nav/gotop.png" style="width: 50px;" alt="">
+            </a>
+        
     <div id="navbarblock">
         <div class="container">
               <nav class="navbar navbar-expand-lg navbar-light ">
@@ -212,6 +216,62 @@ margin-top:250px ;}
     <script>
             AOS.init();
           </script>
+           <script>
+                $("#btn").on("click", function (e) {
+                    $('html,body').animate({
+                        scrollTop: $("#navbarblock").offset().top
+                    },1000);
+                    e.preventDefault();
+                });
+        
+        
+                var width_size = $(window).width()
+                if (width_size > 760) {
+                    $(window).scroll(function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > 600) {
+                            $("#btn").css("bottom", "30px");
+                            $("#btn").css("right", "10px");
+                        } else {
+                            $("#btn").css("bottom", "-100px");
+                        }
+                    })
+                } else {
+                    $(window).scroll(function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > 600) {
+                            $("#btn").css("bottom", "30px");
+                            $("#btn").css("right", "10px");
+                        } else {
+                            $("#btn").css("bottom", "-100px");
+                        }
+                    })
+                }
+        
+                $(window).resize(function () {
+                    var width_size = $(window).width()
+                    if (width_size > 760) {
+                        $(window).scroll(function () {
+                            var scrollTop = $(window).scrollTop();
+                            if (scrollTop > 600) {
+                                $("#btn").css("bottom", "30px");
+                            } else {
+                                $("#btn").css("bottom", "-100px");
+                            }
+                        })
+                    } else {
+                        $(window).scroll(function () {
+                            var scrollTop = $(window).scrollTop();
+                            if (scrollTop > 600) {
+                                $("#btn").css("bottom", "30px");
+                                $("#btn").css("right", "10px");
+                            } else {
+                                $("#btn").css("bottom", "-100px");
+                            }
+                        })
+                    }
+                })
+            </script>
 
 </body>
 
