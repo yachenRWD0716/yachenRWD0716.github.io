@@ -131,13 +131,15 @@ h1 {
       -moz-border-radius: 999px;
       border-radius: 999px;
       z-index: 20;
-      
+      bottom: -100;
 }
+
 @media (max-width: 480px) {
       .logo {
             width: 185px;
       }
-      }
+}
+
 /* @media (max-width: 992px) {
       .dropdown:hover .dropdown-menu {
             display:none ;
