@@ -120,7 +120,7 @@
 </head>
 
 <body>
-     
+
       <!-- Navbar -->
       <div id="navbarblock">
             <div class="container">
@@ -204,8 +204,8 @@
       </div>
 
 
-      <div class="container" style=" position:relative" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
-            data-aos-offset="0" data-aos-duration="2000">
+      <div class="container" style=" position:relative;overflow: hidden;" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
+            data-aos-offset="0" data-aos-duration="2000" >
             <div class="animateCover">
                   <img src="Img/IntroAnimate/cover1.png" alt="" style="width: 135%;
                  height: 120%;">
@@ -265,6 +265,26 @@
             AOS.init();
       </script>
       <script>
+            var swiper = new Swiper('.swiper-container', {
+                  loop: true,
+                  slidesPerView: 4,
+                  slidersPerGroup: 4,
+                  spaceBetween: 30,
+                  autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                  },
+                  pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                  },
+                  navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                  },
+            });
+      </script>
+      <script>
             $("#btn").on("click", function (e) {
                   $('html,body').animate({
                         scrollTop: $("#navbarblock").offset().top
@@ -320,7 +340,7 @@
                   }
             })
       </script>
-     
+
 </body>
 
 </html>
