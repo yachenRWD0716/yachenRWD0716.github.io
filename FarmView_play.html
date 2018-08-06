@@ -1,204 +1,357 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>同樂星辰</title>
-      <!-- cs LINK -->
-      <link rel="stylesheet" href="CSS/bootstrap.min.css">
-      <link rel="stylesheet" href="CSS/swiper.min.css">
-      <link rel="stylesheet" href="CSS/public.css">
-      <link rel="stylesheet" href="CSS/nav.css">
-      <style>
-            .FarmView_play_title {
-                  height: 100px;
-                  text-align: center;
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>同樂星辰</title>
+    <!-- cs LINK -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/swiper.min.css">
+    <link rel="stylesheet" href="CSS/public.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .FarmView_play_title {
+            height: 100px;
+            text-align: center;
+            padding: 100px 0;
+        }
 
-            .FarmView_play_title h1 {
-                  line-height: 100px;
-            }
+        .FarmView_play_title img {
+            width: 80%;
+            height: 50px;
+            margin-bottom: 50px;
+            margin: 0 auto;
+        }
 
-            .FarmView_play_photo {
-                  width: 100%;
-                  height: 500px;
-                  background-color: aqua;
-            }
+        .FarmView_play_title h1 {
+            line-height: 100px;
+        }
 
-            .FarmView_play_text {
-                  margin-top: 100px;
-                  width: 100%;
-                  height: 200px;
-                  /* background-color: black; */
-            }
+        .FarmView_play_photo {
+            width: 100%;
+            height: 500px;
 
-            .imgctrl {
-                  background-position: center;
-                  background-size: cover;
-                  width: 100%;
-                  height: 100%;
+        }
 
-            }
+        .FarmView_play_text {
+            margin-top: 100px;
+            width: 100%;
+            height: 200px;
+            /* background-color: black; */
+        }
 
-            .img1 {
-                  background-image: url('Img/play/play-01.jpg');
-                  height: 500px;
-            }
+        .imgctrl {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
 
-            .img2 {
-                  background-image: url('Img/play/play-02.jpg');
-                  height: 500px;
-            }
+        }
 
-            .img3 {
-                  background-image: url('Img/play/play-03.jpg');
-                  height: 500px;
-            }
-      </style>
+        .img1 {
+            background-image: url('Img/play/play-01.jpg');
+            height: 500px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            border-radius: 999px;
+        }
+
+        .img2 {
+            background-image: url('Img/play/play-02.jpg');
+            height: 500px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            border-radius: 999px;
+        }
+
+        .img3 {
+            background-image: url('Img/play/play-03.jpg');
+            height: 500px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            border-radius: 999px;
+        }
+
+        .img4 {
+            background-image: url('Img/play/play-04.jpg');
+            height: 500px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            border-radius: 999px;
+        }
+
+        .img5 {
+            background-image: url('Img/play/play-05.jpg');
+            height: 500px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            border-radius: 999px;
+        }
+
+        .img6 {
+            background-image: url('Img/play/play-06.jpg');
+            height: 500px;
+            -webkit-border-radius: 999px;
+            -moz-border-radius: 999px;
+            border-radius: 999px;
+        }
+
+        .FarmView_play_border {
+            background-color: #edc420;
+            height: 3px;
+            margin: 30px auto 0px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-        <div id="navbarblock">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light ">
-                        <a class="navbar-brand" href="#index.html">
-                            <img class="logo" src="Icon/01-nav/logo.png" alt="">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                            <ul class="navbar-nav">
-                                <li class="nav-item" id="index">
-                                    <a class="nav-link" href="index_title.html">
-                                        <div class="nav-menu-block" id="indexiconHover">
-                                            <img class="nav-menu" src="Icon/01-nav/index.png" alt="">
-                                            <p style="color: white"> 首 頁</p>
-                                        </div>
-                                    </a>
-                                </li>
-        
-                                <li class="nav-item dropdown" id="origin">
-                                    <a class="nav-link" href="FarmInfo.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-                                        <div class="nav-menu-block" id="originiconHover">
-                                            <img class="nav-menu" src="Icon/01-nav/origin.png" alt="">
-                                            <p style="color: white">今夜緣起</p>
-                                        </div>
-                                    </a>
-        
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
-                                        <a class="dropdown-item" href="FarmInfo.html#section2">
-                                            <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
-                                        </a>
-                                        <a class="dropdown-item" href="FarmInfo.html#section3">
-                                            <img class="img-block" src="Icon/01-nav/news.png" alt="">農場須知
-                                        </a>
-                                        <a class="dropdown-item" href="FarmInfo.html#section4">
-                                            <img class="img-block" src="Icon/01-nav/traffic.png" alt="">交通資訊
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown" id="view">
-                                    <a class="nav-link " id="navbarDropdownMenuLink" href="FarmView.html" aria-haspopup="true" aria-expanded="false">
-                                        <div class="nav-menu-block" id="viewiconHover">
-                                            <img class="nav-menu" src="Icon/01-nav/view.png" alt="" style="width: 40px;">
-                                            <p style="color: white">園區景點 </p>
-        
-                                        </div>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
-                                        <a class="dropdown-item" href="FarmView.html#FarmView_content_map_id">
-                                            <img class="img-block" src="Icon/01-nav/map.png" alt=""> 園區地圖
-                                        </a>
-                                        <a class="dropdown-item" href="FarmView_play.html">
-                                            <img class="img-block" src="Icon/01-nav/play.png" alt=""> 同樂星辰
-                                        </a>
-                                        <a class="dropdown-item" href="FarmView_animal_Alpaca.html">
-                                            <img class="img-block" src="Icon/01-nav/animal.png" alt=""> 動物星辰
-                                        </a>
-                                        <a class="dropdown-item" href="FarmView_picture.html">
-                                            <img class="img-block" src="Icon/01-nav/picture.png" alt=""> 今夜拍拍
-                                        </a>
-                                        <a class="dropdown-item" href="FarmView_eat.html">
-                                            <img class="img-block" src="Icon/01-nav/food.png" alt=""> 今夜美食
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown" id="contact">
-                                    <a class="nav-link" id="navbarDropdownMenuLink" href="ContactUs.html">
-                                        <div class="nav-menu-block" id="contacticonHover" href="ContactUs.html">
-                                            <img class="nav-menu" src="Icon/01-nav/contact.png" alt="">
-                                            <p style="color: white">聯絡我們</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+
+    <div id="navbarblock">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="Icon/01-nav/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" id="index">
+                            <a class="nav-link" href="index_title.html">
+                                <div class="nav-menu-block" id="indexiconHover">
+                                    <img class="nav-menu" src="Icon/01-nav/index.png" alt="">
+                                    <p style="color: white"> 首 頁</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown" id="origin">
+                            <a class="nav-link" href="FarmInfo.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                <div class="nav-menu-block" id="originiconHover">
+                                    <img class="nav-menu" src="Icon/01-nav/origin.png" alt="">
+                                    <p style="color: white">今夜緣起</p>
+                                </div>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B;">
+                                <a class="dropdown-item" href="FarmInfo.html#section2">
+                                    <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
+                                </a>
+                                <a class="dropdown-item" href="FarmInfo.html#section3">
+                                    <img class="img-block" src="Icon/01-nav/news.png" alt="">農場須知
+                                </a>
+                                <a class="dropdown-item" href="FarmInfo.html#section4">
+                                    <img class="img-block" src="Icon/01-nav/traffic.png" alt="">交通資訊
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" id="view">
+                            <a class="nav-link " id="navbarDropdownMenuLink" href="FarmView.html" aria-haspopup="true" aria-expanded="false">
+                                <div class="nav-menu-block" id="viewiconHover">
+                                    <img class="nav-menu" src="Icon/01-nav/view.png" alt="" style="width: 40px;">
+                                    <p style="color: white">園區景點 </p>
+
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
+                                <!-- <a class="dropdown-item" href="FarmView.html#data-v">
+                                                  <img class="img-block" src="Icon/01-nav/map.png" alt=""> 園區地圖
+                                            </a> -->
+                                <a class="dropdown-item" href="FarmView_play.html">
+                                    <img class="img-block" src="Icon/01-nav/play.png" alt=""> 同樂星辰
+                                </a>
+                                <a class="dropdown-item" href="FarmView_animal_Alpaca.html">
+                                    <img class="img-block" src="Icon/01-nav/animal.png" alt=""> 動物星辰
+                                </a>
+                                <a class="dropdown-item" href="FarmView_picture.html">
+                                    <img class="img-block" src="Icon/01-nav/picture.png" alt=""> 今夜拍拍
+                                </a>
+                                <a class="dropdown-item" href="FarmView_eat.html">
+                                    <img class="img-block" src="Icon/01-nav/food.png" alt=""> 今夜美食
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" id="contact">
+                            <a class="nav-link" id="navbarDropdownMenuLink" href="ContactUs.html">
+                                <div class="nav-menu-block" id="contacticonHover" href="ContactUs.html">
+                                    <img class="nav-menu" src="Icon/01-nav/contact.png" alt="">
+                                    <p style="color: white;">聯絡我們</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="FarmView_play">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="FarmView_play_title" data-aos="fade-up" data-aos-duration="1500">
+
+                        <img src="Img/tilte/Farmplay_title.svg">
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="box"></div>
+            <div class="row ">
+                <div class="col-12 col-md-7 " data-aos="fade-up" data-aos-duration="1000">
+                    <div class="FarmView_play_photo imgctrl img1"></div>
+                </div>
+                <div class="col-12 col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_text">
+                        <h2> 涼亭區</h2>
+                        太平洋鐵木打造的涼亭區，搭配流水的南洋配景，讓遊客們來到這裡可以坐下來聊是非，橋下一望還有成群的小鴨從旁游過，每當黃昏落幕時，微涼的夜晚蛙聲此起彼 落與家人的聊天生在這裡從未中斷過
+                        <div class="FarmView_play_border"></div>
+                    </div>
                 </div>
             </div>
-      <div id="FarmView_play">
-       
-            <div class="container">
-                  <div class="row">
-                        <div class="col-12">
-                              <div class="FarmView_play_title">
-                                    <h1>同樂星辰</h1>
-                              </div>
-                        </div>
-                        
-                  </div>
-                  <div id="box"></div>
-                  <div class="row">
-                      
-                        <div class="col-12 col-md-7">
-                              <div class="FarmView_play_photo imgctrl img1"></div>
-                        </div>
-                        <div class="col-12 col-md-5 d-flex align-items-center">
-                              <div class="FarmView_play_text">
-                                    <h2> 涼亭區</h2>
 
-                                    太平洋鐵木打造的涼亭區，搭配流水的南洋配景，讓遊客們來到這裡可以坐下來聊是非，橋下一望還有成群的小鴨從旁游過，每當黃昏落幕時，微涼的夜晚蛙聲此起彼 落與家人的聊天生在這裡從未中斷過
-                              </div>
-                        </div>
-                  </div>
-                  <div class="row flex-row-reverse">
-                        <div class="col-12 col-md-7">
-                              <div class="FarmView_play_photo imgctrl img2"></div>
-                        </div>
-                        <div class="col-12 col-md-5 d-flex align-items-center">
-                              <div class="FarmView_play_text">
-                                    <h2> 小孩玩耍區</h2>
-                                    每個小孩都有無限的想像力，在這兒可以盡情的讓小孩玩耍，不僅可以讓小孩玩得盡興，大人們也可以隨時捕捉小孩天真無邪的瞬間。
-                              </div>
-                        </div>
-                  </div>
-                  <div class="row">
-                        <div class="col-12 col-md-7">
-                              <div class="FarmView_play_photo imgctrl img3" style="background-position-x: left;"></div>
-                        </div>
-                        <div class="col-12 col-md-5 d-flex align-items-center">
-                              <div class="FarmView_play_text">
-                                    <h2>歐洲馬車草坪</h2>
-                                    每個小女孩心中都有一個白馬王子，此刻妳將成為童話故事裡的灰姑娘等著白馬王子的出現，純白色的夢幻馬車已悄悄的停在草坪上，馬車旁搭配彩色的牆面有一種鋼琴的浪漫邂逅。
-                              </div>
-                        </div>
-                  </div>
-
-
-
-
+            <div class="row flex-row-reverse">
+                <div class="col-12 col-md-7" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_photo imgctrl img2"></div>
+                </div>
+                <div class="col-12 col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_text">
+                        <h2> 小孩玩耍區</h2>
+                        每個小孩都有無限的想像力，在這兒可以盡情的讓小孩玩耍，不僅可以讓小孩玩得盡興，大人們也可以隨時捕捉小孩天真無邪的瞬間。
+                        <div class="FarmView_play_border"></div>
+                    </div>
+                </div>
             </div>
-            <footer id="footer"></footer>
+            <div class="row">
+                <div class="col-12 col-md-7" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_photo imgctrl img3" style="background-position-x: left;"></div>
+                </div>
+                <div class="col-12 col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_text">
+                        <h2>歐洲馬車草坪</h2>
+                        每個小女孩心中都有一個白馬王子，此刻妳將成為童話故事裡的灰姑娘等著白馬王子的出現，純白色的夢幻馬車已悄悄的停在草坪上，馬車旁搭配彩色的牆面有一種鋼琴的浪漫邂逅。
+                        <div class="FarmView_play_border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-12 col-md-7" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_photo imgctrl img4" style="background-position-x: left;"></div>
+                </div>
+                <div class="col-12 col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_text">
+                        <h2>河邊春夢涼亭區</h2>
+                        太平洋鐵木打造的涼亭區，搭配流水的南洋配景，讓遊客們來到這裡可以坐下來聊是非，橋下一望還有成群的小鴨從旁游過，每當黃昏落幕時，微涼的夜晚蛙聲此起彼 落與家人的聊天生在這裡從未中斷過..
+                        <div class="FarmView_play_border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_photo imgctrl img5" style="background-position-x: left;"></div>
+                </div>
+                <div class="col-12 col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_text">
+                        <h2>鐘椅再一起</h2>
+                        藍白色的設計，還有童趣的國小椅子，整體感覺特別的浪漫不已的地中海風情。取「鐘」、「椅」的諧音，營造出「終於在一起」的造景。令人害羞地場景，可以讓朋友以上戀人未滿的人偷偷互相告白喔!
+                        <div class="FarmView_play_border"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-12 col-md-7" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_photo imgctrl img6" style="background-position-x: left;"></div>
+                </div>
+                <div class="col-12 col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="FarmView_play_text">
+                        <h2>今夜星辰大相框</h2>
+                        曾幾何時是否一張因為遺漏而挽不回全家福的大合照。幸好，森林裡的的大相框都會好好守住大家回憶！有一天，偶然的機緣下，你們提起家人來到這裡!如此深刻的記憶，因為這張重要的照片，讓我也覺得，那天真是幸運的一天！
+                        <div class="FarmView_play_border"></div>
+                    </div>
+                </div>
+            </div>
 
 
-            <!-- JS　script -->
-            <script src=" JS/jquery-3.3.1.slim.min.js "></script>
-            <script src="JS/popper.min.js "></script>
-            <script src="JS/bootstrap.min.js "></script>
-            <script src="JS/swiper.min.js "></script>
+
+
+        </div>
+        <div id="footer"></div>
+
+        <a class="btn01" id="btn" href="#navbarblock">
+            <img src="Icon/01-nav/gotop.png" style="width: 50px;" alt="">
+        </a>
+        <!-- JS　script -->
+        <script src=" JS/jquery-3.3.1.slim.min.js "></script>
+        <script src="JS/popper.min.js "></script>
+        <script src="JS/bootstrap.min.js "></script>
+        <script src="JS/swiper.min.js "></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            $("#btn").on("click", function (e) {
+                $('html,body').animate({
+                    scrollTop: $("#navbarblock").offset().top
+                }, 1000);
+                e.preventDefault();
+            });
+
+
+            var width_size = $(window).width()
+            if (width_size > 760) {
+                $(window).scroll(function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > 600) {
+                        $("#btn").css("bottom", "30px");
+                        $("#btn").css("right", "10px");
+                    } else {
+                        $("#btn").css("bottom", "-100px");
+                    }
+                })
+            } else {
+                $(window).scroll(function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > 600) {
+                        $("#btn").css("bottom", "30px");
+                        $("#btn").css("right", "10px");
+                    } else {
+                        $("#btn").css("bottom", "-100px");
+                    }
+                })
+            }
+
+            $(window).resize(function () {
+                var width_size = $(window).width()
+                if (width_size > 760) {
+                    $(window).scroll(function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > 600) {
+                            $("#btn").css("bottom", "30px");
+                        } else {
+                            $("#btn").css("bottom", "-100px");
+                        }
+                    })
+                } else {
+                    $(window).scroll(function () {
+                        var scrollTop = $(window).scrollTop();
+                        if (scrollTop > 600) {
+                            $("#btn").css("bottom", "30px");
+                            $("#btn").css("right", "10px");
+                        } else {
+                            $("#btn").css("bottom", "-100px");
+                        }
+                    })
+                }
+            })
+        </script>
+
 </body>
 
 </html>

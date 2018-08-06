@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="CSS/swiper.min.css">
       <link rel="stylesheet" href="CSS/nav.css">
       <link rel="stylesheet" href="CSS/public.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
       <style>
             .Farmlnfo_about_photo {
@@ -24,16 +25,20 @@
 
             }
 
+            .row {
+                  margin: 0px;
+            }
+
             .Farmlnfo_about_content {
                   position: relative;
                   width: 100%;
-                  height: 700px;
-                  margin-bottom: 50px;
+                  height: 500px;
 
             }
 
             .Farmlnfo_about_block1 {
                   position: absolute;
+
                   width: 50%;
                   margin-top: 80px;
             }
@@ -60,28 +65,25 @@
             .Farmlnfo_about_block2 {
                   position: absolute;
                   right: 0%;
-                  top: 25%;
-                  width: 40%;
-                  height: 40%;
-                  background-image: url("img/origin/origin-04.jpg");
+                  bottom: 0;
+                  width: 43%;
+                  height: 75%;
+                  background-image: url("Img/origin/origin-04.jpg");
                   background-size: contain;
                   background-repeat: no-repeat;
                   background-position: center;
-
             }
 
             .Farmlnfo_about_block3 {
                   position: absolute;
                   writing-mode: vertical-lr;
-                  bottom: 25%;
+                  bottom: 0;
                   left: -12%;
                   color: #0aaf4b;
                   font-size: 28px;
             }
 
             .Farmlnfo_about_block4 {
-                  position: absolute;
-                  bottom: 0;
                   width: 100%;
                   height: 200px;
                   font-size: 16px;
@@ -89,6 +91,7 @@
                   line-height: 35px;
                   font-weight: 400;
                   left: 2%;
+                  float: right;
 
             }
 
@@ -143,15 +146,14 @@
             }
 
             .Farmlnfo_about_introduce_content_block {
-                  padding-left: 50px;
+
                   font-size: 16px;
                   color: #717071;
                   line-height: 35px;
                   font-weight: 400;
                   width: 90%;
-                  text-align: center;
-                  margin-bottom: 50px;
-
+                  margin-bottom: 20px;
+                  margin-left: 10%;
             }
 
             /* 農場簡介下面的圖片 */
@@ -159,7 +161,7 @@
             .Farmlnfo_about_introduce_photo {
                   width: 100%;
                   height: 530px;
-                  background-image: url("img/origin/origin-05.png");
+                  background-image: url("Img/origin/origin-05.png");
 
                   background-repeat: no-repeat;
                   background-size: contain;
@@ -195,6 +197,7 @@
                   height: 700px;
                   padding-top: 50px;
 
+
             }
 
             .sheepruler {
@@ -213,7 +216,6 @@
                   background-size: contain;
                   background-repeat: no-repeat;
                   background-position: center;
-                  margin-bottom: 50px;
             }
 
             /* 農場簡介下面的圖片 */
@@ -224,10 +226,6 @@
                   background-color: blue;
                   margin: 80px 0px 80px;
             } */
-
-            .clear {
-                  clear: both;
-            }
 
             #Farmlnfo_traffic {
                   width: 100%;
@@ -273,7 +271,6 @@
                   height: 600px;
                   padding: 50px 0 0 0;
                   float: right;
-                  margin-top: 50px;
             }
 
             /*分隔*/
@@ -281,26 +278,101 @@
             .tt {
                   margin-bottom: 100px;
             }
+
+            .lineimg {
+                  width: 100%;
+                  background-image: url("Img/origin/down-01.jpg");
+                  height: 100%;
+                  background-attachment: fixed;
+                  background-repeat: no-repeat;
+            }
+
+            .size {
+                  width: 100%;
+                  height: 350px;
+                  margin-bottom: 100px;
+            }
+
+            .lineimgcover {
+
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0.5)
+            }
+
+            .bb {
+                  margin-bottom: 155px;
+            }
+
+            .aa {
+                  margin-bottom: -12px;
+            }
+
+
+            @media (max-width: 415px) {
+                  .Farmlnfo_about_introduce_content_title {
+                        width: 60%;
+                  }
+                  .Farmlnfo_about_content {
+                        position: relative;
+                        width: 100%;
+                        height: 400px;
+                  }
+                  .Farmlnfo_about_photo {
+
+                        width: 100%;
+                        height: 400px;
+
+                  }
+                  .Farmlnfo_about_block2 {
+                        position: absolute;
+                        right: 0%;
+                        bottom: -32px;
+                        width: 43%;
+                        height: 75%;
+                        background-image: url(Img/origin/origin-04.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                  }
+                  .bb {
+                        margin-bottom: 260px;
+                  }
+                  .tt {
+                        margin-bottom: 50px;
+                  }
+                  .aa {
+                        margin-bottom: -20px;
+                        margin-left: -14px;
+                  }
+                  #Farmlnfo_knows {
+                        width: 100%;
+                        margin: 0 auto -200px;
+                  }
+            }
       </style>
 </head>
 
 <body>
+            <a class="btn01" id="btn" href="#navbarblock">
+                        <img src="Icon/01-nav/gotop.png" style="width: 50px;" alt="">
+                    </a>
+                
       <div id="Farmlnfo">
             <div id="navbarblock">
-                  <div class="container">
+                  <div class="container" >
                         <nav class="navbar navbar-expand-lg navbar-light ">
-                              <a class="navbar-brand" href="#index.html">
+                              <a class="navbar-brand" href="index.html">
                                     <img class="logo" src="Icon/01-nav/logo.png" alt="">
                               </a>
                               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                                     aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                               </button>
-                              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                              <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
                                     <ul class="navbar-nav">
-                                          <li class="nav-item" id="index">
+                                          <li class="nav-item dropdown" id="index">
                                                 <a class="nav-link" href="index_title.html">
-                                                      <div class="nav-menu-block" id="indexiconHover">
+                                                      <div class="nav-menu-block" id="indexiconHover" >
                                                             <img class="nav-menu" src="Icon/01-nav/index.png" alt="">
                                                             <p style="color: white"> 首 頁</p>
                                                       </div>
@@ -315,7 +387,7 @@
                                                       </div>
                                                 </a>
 
-                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B;">
                                                       <a class="dropdown-item" href="FarmInfo.html#section2">
                                                             <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
                                                       </a>
@@ -336,9 +408,9 @@
                                                       </div>
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
-                                                      <a class="dropdown-item" href="FarmView.html#FarmView_content_map_id">
+                                                      <!-- <a class="dropdown-item" href="FarmView.html#data-v">
                                                             <img class="img-block" src="Icon/01-nav/map.png" alt=""> 園區地圖
-                                                      </a>
+                                                      </a> -->
                                                       <a class="dropdown-item" href="FarmView_play.html">
                                                             <img class="img-block" src="Icon/01-nav/play.png" alt=""> 同樂星辰
                                                       </a>
@@ -357,7 +429,7 @@
                                                 <a class="nav-link" id="navbarDropdownMenuLink" href="ContactUs.html">
                                                       <div class="nav-menu-block" id="contacticonHover" href="ContactUs.html">
                                                             <img class="nav-menu" src="Icon/01-nav/contact.png" alt="">
-                                                            <p style="color: white">聯絡我們</p>
+                                                            <p style="color: white;">聯絡我們</p>
                                                       </div>
                                                 </a>
                                           </li>
@@ -369,12 +441,15 @@
             <div id="section1">
                   <div class="container">
                         <div class="row">
-                              <div class="col-12 col-md-6">
+                              <div class="col-12 col-md-6" data-aos="fade-right"
+                              data-aos-offset="300"
+                              data-aos-easing="ease-in-sine"
+                              data-aos-duration="1000">
                                     <div class="Farmlnfo_about_photo"></div>
                               </div>
-                              <div class="col-12 col-md-6">
+                              <div class="col-12 col-md-6" >
                                     <div class="Farmlnfo_about_content">
-                                          <div class="Farmlnfo_about_block1">
+                                          <div class="Farmlnfo_about_block1"data-aos="fade-up"data-aos-duration="1000">
                                                 <div class="Farmlnfo_about_block1_top">
                                                       <img src="Img/tilte/Farmlnfo_title.svg">
 
@@ -383,27 +458,28 @@
 
                                                 </div>
                                           </div>
-                                          <div class="Farmlnfo_about_block2"></div>
-                                          <div class="Farmlnfo_about_block3">
-                                                <h1 class="aa">今夜起源</h1>
+                                          <div class="Farmlnfo_about_block2"data-aos="fade-up"data-aos-duration="1000"></div>
+                                          <div class="Farmlnfo_about_block3"data-aos="fade-up"data-aos-duration="1000">
+                                                <h1 class="font_30px">今夜緣起</h1>
                                           </div>
-                                          <div class="Farmlnfo_about_block4">
-                                                <p>在2009年，剛搬至彰化石牌里的創辦人施先生，偶然間多次遇到一位老先生從山上抓著松鼠下山，在好奇心推使之下詢問了老先生， 原來是松鼠吃了老先生辛苦培育的果實，破壞了他辛苦耕作的農場，斷了經濟命脈，因此在不得已的情況下，將松鼠處理掉。
-                                                      創辦人一聽之下於心不忍，並告知老先生：「不如抓來給我飼養吧」，由於創辦人本身就對園藝景觀和動物有研究， 意外家裡的院子變成的村里觀看小動物的場所，加上看到小孩來看松鼠臉上滿足的笑容，讓創辦人決心打造一個夢幻的農場之路。
-                                                </p>
-                                          </div>
+
+                                    </div>
+                                    <div class="Farmlnfo_about_block4"data-aos="fade-up"data-aos-duration="1000">
+                                          <p>在2009年，剛搬至彰化石牌里的創辦人施先生，偶然間多次遇到一位老先生從山上抓著松鼠下山，在好奇心推使之下詢問了老先生， 原來是松鼠吃了老先生辛苦培育的果實，破壞了他辛苦耕作的農場，斷了經濟命脈，因此在不得已的情況下，將松鼠處理掉。
+                                                創辦人一聽之下於心不忍，並告知老先生：「不如抓來給我飼養吧」，由於創辦人本身就對園藝景觀和動物有研究， 意外家裡的院子變成的村里觀看小動物的場所，加上看到小孩來看松鼠臉上滿足的笑容，讓創辦人決心打造一個夢幻的農場之路。
+                                          </p>
                                     </div>
                               </div>
                         </div>
                   </div>
-
             </div>
-            <div class="row tt"></div>
-            <div class="row tt"></div>
+            <div class="row">
+                  <div class="col-12 bb "></div>
+            </div>
             <div id="section2">
                   <div class="container tt">
                         <div class="row">
-                              <div class="col-12 col-md-5">
+                              <div class="col-12 col-md-4" data-aos="fade-up">
                                     <div id="Farmlnfo_about_introduce">
                                           <div class="Farmlnfo_about_introduce_text">
                                                 <p class="aa">農場簡介</p>
@@ -415,9 +491,9 @@
                               </div>
 
 
-                              <div class="col-12 col-md-7 ">
-                                    <div class="Farmlnfo_about_introduce_content">
-                                          <div class="Farmlnfo_about_introduce_content_title">
+                              <div class="col-12 col-md-8">
+                                    <div class="Farmlnfo_about_introduce_content" data-aos="fade-up">
+                                          <div class="Farmlnfo_about_introduce_content_title" >
                                                 <div class="pagination_title">整頓</div>
                                           </div>
                                           <div class="Farmlnfo_about_introduce_content_block">
@@ -426,7 +502,7 @@
 
                                           </div>
                                     </div>
-                                    <div class="Farmlnfo_about_introduce_content">
+                                    <div class="Farmlnfo_about_introduce_content" data-aos="fade-up">
                                           <div class="Farmlnfo_about_introduce_content_title">
                                                 <div class="pagination_title">開幕</div>
                                           </div>
@@ -436,7 +512,7 @@
 
                                           </div>
                                     </div>
-                                    <div class="Farmlnfo_about_introduce_content">
+                                    <div class="Farmlnfo_about_introduce_content" data-aos="fade-up">
                                           <div class="Farmlnfo_about_introduce_content_title">
                                                 <div class="pagination_title">巧思</div>
                                           </div>
@@ -457,11 +533,8 @@
                         </div>
                   </div>
                   <div class="row">
-                        <div class="col-12">
-                              <div class="card   tt">
-                                    <img class="card-img" src="Img/origin/down.jpg" alt="Card image" style="width: 100%;">
-
-                              </div>
+                        <div class="aa lineimg size" style="margin-bottom: 100px;">
+                              <div class="lineimgcover"></div>
                         </div>
                   </div>
                   <!-- <div class="Farmlnfo_about_introduce_photo tt"></div> -->
@@ -474,18 +547,20 @@
                   <div class="row">
                         <div class="col-12 col-md-5">
                               <div id="Farmlnfo_knows">
-                                    <div class="Farmlnfo_knows_text">
+                                    <div class="Farmlnfo_knows_text" data-aos="fade-up">
                                           <p class="aa">農場須知</p>
                                     </div>
-                                    <div class="Farmlnfo_knows_Pagination"></div>
-                                    <div class="Farmlnfo_knows_Ruler">
+                                    <div class="Farmlnfo_knows_Pagination" data-aos="fade-up"></div>
+                                    <div class="Farmlnfo_knows_Ruler" data-aos="fade-up"
+                                    data-aos-duration="3000">
                                           <div class="sheepruler"></div>
                                     </div>
                               </div>
 
                         </div>
                         <div class="col-12 col-md-7">
-                              <div class="Farmlnfo_knows_photo"></div>
+                              <div class="Farmlnfo_knows_photo" data-aos="fade-up"
+                              data-aos-duration="3000"></div>
                         </div>
                   </div>
             </div>
@@ -496,16 +571,17 @@
                         <div class="col-12 col-md-4">
                               <div id="Farmlnfo_traffic">
                                     <div class="Farmlnfo_traffic_text">
-                                          <p class="aa">交通資訊</p>
+                                          <p class="aa" data-aos="fade-up">交通資訊</p>
                                     </div>
-                                    <div class="Farmlnfo_traffic_Pagination"></div>
-                                    <div class="Farmlnfo_traffic_Ruler">
+                                    <div class="Farmlnfo_traffic_Pagination" data-aos="fade-up"></div>
+                                    <div class="Farmlnfo_traffic_Ruler" data-aos="fade-up"
+                                    data-aos-duration="2000">
                                           <div class="traffic">
-                                                <img src="Img/origin/train.png" style="width: 100px;height: 100px ;margin: 20px 0px;">
+                                                <img src="Img/origin/train.png" style="width: 100px;height: 100px">
                                           </div>
-                                          <p><b>
+                                          <p>
                                                 大眾運輸工具資訊：
-                                          </p></b>
+                                          </p>
 
                                           <p>
                                                 彰化客運： 彰化客運 6916線(彰化-省訓團-南投)石牌坑站牌→步行約2公里路程(約20分)→今夜星辰休閒農場
@@ -514,10 +590,9 @@
                                           <div class="traffic">
                                                 <img src="Img/origin/car.png" style="width: 100px;height: 100px">
                                           </div>
-                                          <p><b>
+                                          <p>
 
-                                                開車資訊：
-                                          </p></b>
+                                                開車資訊：</p>
                                           <p>
 
 
@@ -535,9 +610,14 @@
 
                         </div>
                         <div class="col-12 col-md-8">
-                              <div class="Farmlnfo_traffic_photo">
+                              <div class="Farmlnfo_traffic_photo" data-aos="fade-up"
+                              data-aos-duration="2000">
+
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.4040253732824!2d120.60427001498715!3d24.052072784441542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469397c61110041%3A0x6c8402a5c210af5c!2z5LuK5aSc5pif6L6w5LyR6ZaS6L6y5aC0!5e0!3m2!1szh-TW!2stw!4v1533385554234"
-                                          width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                          width="100%" height="550" frameborder="0" style="border:0; margin-bottom: 50px;" allowfullscreen></iframe>
+
+                                    <img src="Img/origin/origin-05.png" style="width:100% ;">
+
                               </div>
                         </div>
                   </div>
@@ -547,11 +627,71 @@
       </div>
       <div id="footer"></div>
       <!-- JS　script -->
+     
       <script src=" JS/jquery-3.3.1.slim.min.js "></script>
       <script src="JS/popper.min.js "></script>
       <script src="JS/bootstrap.min.js "></script>
       <script src="JS/swiper.min.js "></script>
-
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+            AOS.init();
+      </script>
+       <script>
+                  $("#btn").on("click", function (e) {
+                      $('html,body').animate({
+                          scrollTop: $("#navbarblock").offset().top
+                      },1000);
+                      e.preventDefault();
+                  });
+          
+          
+                  var width_size = $(window).width()
+                  if (width_size > 760) {
+                      $(window).scroll(function () {
+                          var scrollTop = $(window).scrollTop();
+                          if (scrollTop > 600) {
+                              $("#btn").css("bottom", "30px");
+                              $("#btn").css("right", "10px");
+                          } else {
+                              $("#btn").css("bottom", "-100px");
+                          }
+                      })
+                  } else {
+                      $(window).scroll(function () {
+                          var scrollTop = $(window).scrollTop();
+                          if (scrollTop > 600) {
+                              $("#btn").css("bottom", "30px");
+                              $("#btn").css("right", "10px");
+                          } else {
+                              $("#btn").css("bottom", "-100px");
+                          }
+                      })
+                  }
+          
+                  $(window).resize(function () {
+                      var width_size = $(window).width()
+                      if (width_size > 760) {
+                          $(window).scroll(function () {
+                              var scrollTop = $(window).scrollTop();
+                              if (scrollTop > 600) {
+                                  $("#btn").css("bottom", "30px");
+                              } else {
+                                  $("#btn").css("bottom", "-100px");
+                              }
+                          })
+                      } else {
+                          $(window).scroll(function () {
+                              var scrollTop = $(window).scrollTop();
+                              if (scrollTop > 600) {
+                                  $("#btn").css("bottom", "30px");
+                                  $("#btn").css("right", "10px");
+                              } else {
+                                  $("#btn").css("bottom", "-100px");
+                              }
+                          })
+                      }
+                  })
+              </script>
 </body>
 
 </html>

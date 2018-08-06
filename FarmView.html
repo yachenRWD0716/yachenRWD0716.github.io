@@ -10,26 +10,25 @@
       <link rel="stylesheet" href="CSS/swiper.min.css">
       <link rel="stylesheet" href="CSS/public.css">
       <link rel="stylesheet" href="CSS/nav.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <style>
             .FarmView_content_title {
                   width: 100%;
-                  height: 150px;
-                  line-height: 150px;
+
                   text-align: center;
-                  padding: 100px 0;
+                  padding: 50px 0px 25px 0px;
             }
 
 
             .FarmView_content_title h1 {
                   text-align: center;
-                  line-height: 150px;
             }
 
             .faemeview_title_img {
+                  width: 60%;
                   text-align: center;
                   display: block;
-                  margin: 0 auto 60px;
-                  width: 395px;
+                  margin: 0 auto 20px;
             }
 
             .data-v-4559be12 {
@@ -43,11 +42,11 @@
             .FarmView_content_map {
                   width: 100%;
                   height: 470px;
-                  background-image: url('Img/FarmView/GuideMap.jpg');
+                  background-image: url('Img/FarmView/GuideMap.png');
                   background-position: center;
                   background-size: contain;
                   background-repeat: no-repeat;
-                  background-color: #B3CC3C;
+                  background-color: #f8f8cb;
 
 
             }
@@ -149,125 +148,138 @@
 </head>
 
 <body>
-            <div id="navbarblock">
-                        <div class="container">
-                            <nav class="navbar navbar-expand-lg navbar-light ">
-                                <a class="navbar-brand" href="#index.html">
-                                    <img class="logo" src="Icon/01-nav/logo.png" alt="">
-                                </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item" id="index">
-                                            <a class="nav-link" href="index_title.html">
+            <a class="btn01" id="btn" href="#navbarblock">
+                        <img src="Icon/01-nav/gotop.png" style="width: 50px;" alt="">
+                    </a>
+                
+      <div id="navbarblock">
+            <div class="container">
+                  <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="index.html">
+                              <img class="logo" src="Icon/01-nav/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+                              <ul class="navbar-nav">
+                                    <li class="nav-item dropdown" id="index">
+                                          <a class="nav-link" href="index_title.html">
                                                 <div class="nav-menu-block" id="indexiconHover">
-                                                    <img class="nav-menu" src="Icon/01-nav/index.png" alt="">
-                                                    <p style="color: white"> 首 頁</p>
+                                                      <img class="nav-menu" src="Icon/01-nav/index.png" alt="">
+                                                      <p style="color: white"> 首 頁</p>
                                                 </div>
-                                            </a>
-                                        </li>
-                
-                                        <li class="nav-item dropdown" id="origin">
-                                            <a class="nav-link" href="FarmInfo.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                          </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown" id="origin">
+                                          <a class="nav-link" href="FarmInfo.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
                                                 <div class="nav-menu-block" id="originiconHover">
-                                                    <img class="nav-menu" src="Icon/01-nav/origin.png" alt="">
-                                                    <p style="color: white">今夜緣起</p>
+                                                      <img class="nav-menu" src="Icon/01-nav/origin.png" alt="">
+                                                      <p style="color: white">今夜緣起</p>
                                                 </div>
-                                            </a>
-                
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
+                                          </a>
+
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B;">
                                                 <a class="dropdown-item" href="FarmInfo.html#section2">
-                                                    <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
+                                                      <img class="img-block" src="Icon/01-nav/introduce.png" alt="">農場簡介
                                                 </a>
                                                 <a class="dropdown-item" href="FarmInfo.html#section3">
-                                                    <img class="img-block" src="Icon/01-nav/news.png" alt="">農場須知
+                                                      <img class="img-block" src="Icon/01-nav/news.png" alt="">農場須知
                                                 </a>
                                                 <a class="dropdown-item" href="FarmInfo.html#section4">
-                                                    <img class="img-block" src="Icon/01-nav/traffic.png" alt="">交通資訊
+                                                      <img class="img-block" src="Icon/01-nav/traffic.png" alt="">交通資訊
                                                 </a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown" id="view">
-                                            <a class="nav-link " id="navbarDropdownMenuLink" href="FarmView.html" aria-haspopup="true" aria-expanded="false">
+                                          </div>
+                                    </li>
+                                    <li class="nav-item dropdown" id="view">
+                                          <a class="nav-link " id="navbarDropdownMenuLink" href="FarmView.html" aria-haspopup="true" aria-expanded="false">
                                                 <div class="nav-menu-block" id="viewiconHover">
-                                                    <img class="nav-menu" src="Icon/01-nav/view.png" alt="" style="width: 40px;">
-                                                    <p style="color: white">園區景點 </p>
-                
+                                                      <img class="nav-menu" src="Icon/01-nav/view.png" alt="" style="width: 40px;">
+                                                      <p style="color: white">園區景點 </p>
+
                                                 </div>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
-                                                <a class="dropdown-item" href="FarmView.html#FarmView_content_map_id">
-                                                    <img class="img-block" src="Icon/01-nav/map.png" alt=""> 園區地圖
-                                                </a>
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:#0AAF4B">
+                                                <!-- <a class="dropdown-item" href="FarmView.html#data-v">
+                                                      <img class="img-block" src="Icon/01-nav/map.png" alt=""> 園區地圖
+                                                </a> -->
                                                 <a class="dropdown-item" href="FarmView_play.html">
-                                                    <img class="img-block" src="Icon/01-nav/play.png" alt=""> 同樂星辰
+                                                      <img class="img-block" src="Icon/01-nav/play.png" alt=""> 同樂星辰
                                                 </a>
                                                 <a class="dropdown-item" href="FarmView_animal_Alpaca.html">
-                                                    <img class="img-block" src="Icon/01-nav/animal.png" alt=""> 動物星辰
+                                                      <img class="img-block" src="Icon/01-nav/animal.png" alt=""> 動物星辰
                                                 </a>
                                                 <a class="dropdown-item" href="FarmView_picture.html">
-                                                    <img class="img-block" src="Icon/01-nav/picture.png" alt=""> 今夜拍拍
+                                                      <img class="img-block" src="Icon/01-nav/picture.png" alt=""> 今夜拍拍
                                                 </a>
                                                 <a class="dropdown-item" href="FarmView_eat.html">
-                                                    <img class="img-block" src="Icon/01-nav/food.png" alt=""> 今夜美食
+                                                      <img class="img-block" src="Icon/01-nav/food.png" alt=""> 今夜美食
                                                 </a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown" id="contact">
-                                            <a class="nav-link" id="navbarDropdownMenuLink" href="ContactUs.html">
+                                          </div>
+                                    </li>
+                                    <li class="nav-item dropdown" id="contact">
+                                          <a class="nav-link" id="navbarDropdownMenuLink" href="ContactUs.html">
                                                 <div class="nav-menu-block" id="contacticonHover" href="ContactUs.html">
-                                                    <img class="nav-menu" src="Icon/01-nav/contact.png" alt="">
-                                                    <p style="color: white">聯絡我們</p>
+                                                      <img class="nav-menu" src="Icon/01-nav/contact.png" alt="">
+                                                      <p style="color: white;">聯絡我們</p>
                                                 </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
+                                          </a>
+                                    </li>
+                              </ul>
                         </div>
-                    </div>
+                  </nav>
+            </div>
+      </div>
       <div id="FarmView_index">
             <div class="FarmView_content">
+
                   <div class="container">
+
                         <div class="row">
-                              <div class="col-12">
-                                    <div class="FarmView_content_title ">
+                              <div class="col-12" data-aos="fade-up"
+                              data-aos-duration="2000">
+                                    <div class="FarmView_content_title">
                                           <div class="faemeview_title_img">
                                                 <img src="Img/tilte/FarmView_title.svg">
                                           </div>
                                     </div>
-                                    <strong class="data-v-4559be12">〖 園區地圖 〗</strong>
+                                    <strong class="data-v-4559be12" id="data-v">〖 園區地圖 〗</strong>
                                     <div class="col-12" id="box"></div>
                               </div>
                         </div>
-                        <div class="row" style="margin-bottom: 108px">
+                        <div class="row" style="margin-bottom: 108px" >
                               <div class="col-12">
-                                    <div class="FarmView_content_map" id="FarmView_content_map_id"></div>
+                                    <div class="FarmView_content_map" id="FarmView_content_map_id" data-aos="fade-up"
+                                    data-aos-duration="2000"></div>
                               </div>
 
                         </div>
                         <div class="row">
-                              <div class="col-12">
-                                    <strong class="data-v-4559be12">〖 環境設施 〗</strong>
+                              <div class="col-12" >
+                                    <strong class="data-v-4559be12" data-aos="fade-up"
+                                    data-aos-duration="1000">〖 環境設施 〗</strong>
                                     <div class="col-12" id="box">
                                     </div>
                               </div>
                         </div>
 
                         <!-- 同樂星辰 -->
-                        <div class="row" style="margin-bottom: 150px; padding: 0 15px">
+                        <div class="row" style="margin-bottom: 150px; padding: 0 15px" data-aos="fade-up"
+                        data-aos-duration="2000">
 
                               <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
+
                                     <div class="FarmView_content_block">
                                           <div class="card">
-                                                <div id="cover">
-                                                      <h2 class="card_title">同樂星辰</h1>
-                                                            <div class="card_text">有許多景點設施提供給您們拍照，歡迎大小朋友還有情侶們來我們園區探索喔！</div>
-                                                </div>
-                                                <div class="BG pic1"></div>
+                                                <a href="FarmView_play.html">
+                                                      <div id="cover">
+                                                            <h2 class="card_title">同樂星辰</h1>
+                                                                  <div class="card_text">有許多景點設施提供給您們拍照，歡迎大小朋友還有情侶們來我們園區探索喔！</div>
+                                                      </div>
+                                                      <div class="BG pic1"></div>
+                                                </a>
                                           </div>
                                     </div>
                               </div>
@@ -277,11 +289,13 @@
                               <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
                                     <div class="FarmView_content_block">
                                           <div class="card">
-                                                <div id="cover">
-                                                      <h2 class="card_title">動物星辰</h1>
-                                                            <div class="card_text">園區裡有許多各式各樣的小動物來等你與牠們一塊玩耍喔！</div>
-                                                </div>
-                                                <div class="BG pic2"></div>
+                                                <a href="FarmView_animal_Alpaca.html">
+                                                      <div id="cover">
+                                                            <h2 class="card_title">動物星辰</h1>
+                                                                  <div class="card_text">園區裡有許多各式各樣的小動物來等你與牠們一塊玩耍喔！</div>
+                                                      </div>
+                                                      <div class="BG pic2"></div>
+                                                </a>
                                           </div>
                                     </div>
                               </div>
@@ -290,11 +304,13 @@
                               <div class="col-12 col-md-6 col-xl-3" style="padding: 0;" id="mrb">
                                     <div class="FarmView_content_block">
                                           <div class="card">
-                                                <div id="cover">
-                                                      <h2 class="card_title">今夜拍拍</h1>
-                                                            <div class="card_text">網美網帥都來踩點了，你還不趕快來！？</div>
-                                                </div>
-                                                <div class="BG pic3"></div>
+                                                <a href="FarmView_picture.html">
+                                                      <div id="cover">
+                                                            <h2 class="card_title">今夜拍拍</h1>
+                                                                  <div class="card_text">網美網帥都來踩點了，你還不趕快來！？</div>
+                                                      </div>
+                                                      <div class="BG pic3"></div>
+                                                </a>
                                           </div>
                                     </div>
                               </div>
@@ -303,22 +319,25 @@
                               <div class="col-12 col-md-6 col-xl-3" style="padding: 0;">
                                     <div class="FarmView_content_block">
                                           <div class="card">
-                                                <div id="cover">
-                                                      <h2 class="card_title">今夜美食</h1>
-                                                            <div class="card_text">我們有美味可口的佳餚，可以滿足您的味蕾。</div>
-                                                </div>
-                                                <div class="BG pic4"></div>
+                                                <a href="FarmView_eat.html">
+                                                      <div id="cover">
+                                                            <h2 class="card_title">今夜美食</h1>
+                                                                  <div class="card_text">我們有美味可口的佳餚，可以滿足您的味蕾。</div>
+                                                      </div>
+                                                      <div class="BG pic4"></div>
+                                                </a>
                                           </div>
                                     </div>
                               </div>
                         </div>
                   </div>
             </div>
-      </div>
 
-      <!-- footer start -->
 
-      <!-- footer end -->
+            <!-- footer start -->
+            <div id="footer">
+            </div>
+            <!-- footer end -->
       </div>
 
       <!-- JS　script -->
@@ -326,8 +345,67 @@
       <script src="JS/popper.min.js "></script>
       <script src="JS/bootstrap.min.js "></script>
       <script src="JS/swiper.min.js "></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+                  AOS.init();
+                </script>
+                 <script>
+                        $("#btn").on("click", function (e) {
+                            $('html,body').animate({
+                                scrollTop: $("#navbarblock").offset().top
+                            },1000);
+                            e.preventDefault();
+                        });
+                
+                
+                        var width_size = $(window).width()
+                        if (width_size > 760) {
+                            $(window).scroll(function () {
+                                var scrollTop = $(window).scrollTop();
+                                if (scrollTop > 600) {
+                                    $("#btn").css("bottom", "30px");
+                                    $("#btn").css("right", "10px");
+                                } else {
+                                    $("#btn").css("bottom", "-100px");
+                                }
+                            })
+                        } else {
+                            $(window).scroll(function () {
+                                var scrollTop = $(window).scrollTop();
+                                if (scrollTop > 600) {
+                                    $("#btn").css("bottom", "30px");
+                                    $("#btn").css("right", "10px");
+                                } else {
+                                    $("#btn").css("bottom", "-100px");
+                                }
+                            })
+                        }
+                
+                        $(window).resize(function () {
+                            var width_size = $(window).width()
+                            if (width_size > 760) {
+                                $(window).scroll(function () {
+                                    var scrollTop = $(window).scrollTop();
+                                    if (scrollTop > 600) {
+                                        $("#btn").css("bottom", "30px");
+                                    } else {
+                                        $("#btn").css("bottom", "-100px");
+                                    }
+                                })
+                            } else {
+                                $(window).scroll(function () {
+                                    var scrollTop = $(window).scrollTop();
+                                    if (scrollTop > 600) {
+                                        $("#btn").css("bottom", "30px");
+                                        $("#btn").css("right", "10px");
+                                    } else {
+                                        $("#btn").css("bottom", "-100px");
+                                    }
+                                })
+                            }
+                        })
+                    </script>
 </body>
-<footer id="footer">
-</footer>
+
 
 </html>
